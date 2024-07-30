@@ -26,7 +26,7 @@
   position: absolute;
   font-size: max(13.4px, min(1vw, 18px));
   line-height: 21.6px;
-  z-index: 50;
+  z-index: 5;
 }
 
 .header-wraper {
@@ -451,6 +451,101 @@
   }
   .header-search__top .input-group {
     height: max(42px, min(10vw, 100px));
+  }
+  /* .header-toggler {
+    z-index: 6;
+  }
+  .offcanvas-header {
+    z-index: 6;
+  } */
+
+  .header-toggler .offcanvas-header {
+    background-color: var(--deep-blue-color);
+    color: var(--white-text-color);
+    font-family: PoppinsVN;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+  }
+  .header-toggler .btn {
+    width: 100%;
+    text-align: left;
+    padding: 16px 14px;
+  }
+
+  .header-toggler .list-group-item {
+    border-radius: 0px;
+  }
+  .header-toggler .offcanvas-body {
+    padding: 0px;
+  }
+  .header-toggler li.list-group-item {
+    padding: 0px;
+  }
+  .header-toggler .btn-firt {
+    color: var(--deep-blue-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .btn-firt:focus {
+    position: relative;
+  }
+
+  .header-toggler .btn-second::after,
+  .header-toggler .btn-firt::after {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 12px;
+    background-repeat: no-repeat;
+    content: "";
+    background: url(../../images/header/offcanvas-arrow.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  .header-toggler .btn-second {
+    padding: 16px 35px;
+    color: var(--slate-gray-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+  }
+  .header-toggler .btn-third {
+    width: 100%;
+    padding-left: 70px;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    display: list-item;
+  }
+  .header-toggler .list-third {
+    list-style: circle;
+    border-bottom: 0px;
+  }
+  .header-toggler .btn-third::before {
+    content: "•"; /* Gạch đầu dòng */
+    position: absolute;
+    left: 55px;
+    font-size: 1em;
+    line-height: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .header-toggler .offcanvas-body {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
