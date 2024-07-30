@@ -1,0 +1,89 @@
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {}
+
+;
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {}
+
+;
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {}
+
+;
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {}
+
+;
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {}
+
+;
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {}
+
+;
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {}
+
+;
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {}
+
+;
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {}
+
+;
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {}
+
+;
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {}
+
+;
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {}
+
+;
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {}
+
+;
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {}
+
+;
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {}
+
+;
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {}
+
+;
+
+/* Mobile */
+@media only screen and (max-width: 739px) {}
+
+;
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {}
+
+;

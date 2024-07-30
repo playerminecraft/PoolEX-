@@ -1,0 +1,126 @@
+section.about {
+  padding-top: 60px;
+}
+
+.about-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+.about-title {
+  font-size: 32px;
+  line-height: 38.4px;
+  color: var(--dark-cerulean-color);
+}
+
+.about-desc {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 55px;
+  padding: 0px 150px;
+  color: var(--deep-blue-color);
+}
+
+.about-detail {
+  background: url(../../images/about/about-detail__background.png);
+  background-position: center;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-detail .container {
+  padding: 11% 0%;
+}
+
+.about-card .card-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28.4px;
+}
+
+.about-card {
+  background: transparent;
+  border-radius: initial;
+  border: none;
+  height: 100%;
+  padding-top: 33px;
+  padding-bottom: 38px;
+}
+
+.about-img {
+  position: relative;
+  padding-top: 30%;
+  width: 30%;
+  margin: auto;
+}
+
+.about-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.about-advantage {
+  background: #e7eff8e5;
+  height: 100%;
+  border-radius: 6px;
+  position: relative;
+}
+
+.about-advantage:hover {
+  cursor: pointer;
+}
+.about-title:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--goldenrod-color);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 16px;
+  cursor: pointer;
+}
+
+.about-title:hover.about-detail {
+  background: url(../../images/about/about-hover.png);
+}
+.about-detail .swiper-slide {
+  height: auto;
+}
+
+.about-btn {
+  background-color: var(--goldenrod-color);
+  color: var(--white-text-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  padding: 16px 28.5px;
+}
+
+.about-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0px;
+}
+
+.about-detail .card-body {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.about-detail .card-title {
+  font-size: 24px;
+  line-height: 28.4px;
+  color: var(--deep-blue-color);
+  margin-bottom: 27px;
+}
+.about-detail .card-text {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--slate-gray-color);
+}

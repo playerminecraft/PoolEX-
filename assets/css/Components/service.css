@@ -1,0 +1,54 @@
+.services {
+  position: relative;
+  overflow: hidden;
+}
+.services-wrapper {
+  padding-top: 6.1%;
+  padding-bottom: 3%;
+}
+.service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-cerulean-color);
+  text-align: center;
+  font-weight: 400;
+}
+
+.service-sub {
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.service-title {
+  font-size: 32px;
+  line-height: 38.4px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+}
+.services-card {
+  border: none;
+}
+
+.services-card .card-body {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28.4px;
+  margin-top: 34px;
+  padding: 16px 0px;
+}
+
+.services-decoration {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+.services-card__text {
+  color: var(--deep-blue-color);
+}
+
+.services-card:hover.services-card circle {
+  fill: #f0b529;
+  fill-opacity: initial;
+}

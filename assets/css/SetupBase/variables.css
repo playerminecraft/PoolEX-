@@ -1,0 +1,54 @@
+/* ======================== Import front ======================== */
+@font-face {
+  @font-face {
+    font-family: "DVN-Poppins";
+    src: url("../../font/FZ\ Poppins-Light.ttf") format("truetype");
+    font-style: light;
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: "DVN-Poppins";
+    src: url("../../font/DesignerVN-Poppins-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "DVN-Poppins";
+    src: url("../../font/FZ\ Poppins-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "DVN-Poppins";
+    src: url("../../font/FZ\ Poppins-SemiBold.ttf") format("truetype");
+    font-style: bold;
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: "DVN-Poppins";
+    src: url("../../font/DesignerVN-Poppins-ExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+  }
+}
+
+:root {
+  --font-main: "DVN-Poppins";
+
+  /*  ======================== Color Main ======================== */
+  --goldenrod-color: #f0b529;
+  --light-steel-blue: #b6c7df;
+  /*  ======================== Text color ======================== */
+  --white-text-color: #ffffff;
+  --deep-blue-color: #1a365d;
+  --deepblur-blue-color: rgba(26, 54, 93, 0.19);
+  --steel-blue-color: #154a81;
+  --slate-gray-color: #708296;
+  --light-gray-color: #d9d9d9;
+  --light-blue-color: #e7eff8e5;
+  --lightblur-blue-color: rgba(231, 239, 248, 0.9);
+}

@@ -1,0 +1,15 @@
+@import "./SetupBase/base.css";
+@import "./SetupBase/reset.css";
+@import "./SetupBase/variables.css";
+@import "./Layouts/header.css";
+@import "./Components/intro.css";
+@import "./Components/service.css";
+@import "./Components/about.css";
+@import "./Components/project.css";
+@import "./Components/procedure.css";
+@import "./Components/sell.css";
+@import "./Components/talk.css";
+@import "./Components/solution.css";
+@import "./Components/register.css";
+@import "./Components/new.css";
+@import "./Layouts/footer.css";

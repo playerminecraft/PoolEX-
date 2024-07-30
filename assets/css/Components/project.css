@@ -1,0 +1,41 @@
+.project-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+}
+
+.project-title {
+  font-size: 32px;
+  color: var(--dark-cerulean-color);
+  line-height: 38.4px;
+}
+
+.project-desc {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+  margin-bottom: 55px;
+  padding: 0px 150px;
+  color: var(--deep-blue-color);
+}
+
+.project-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 70px 0px;
+}
+
+.project-btn {
+  background-color: var(--goldenrod-color);
+  color: var(--white-text-color);
+  font-size: 32px;
+  line-height: 38.4px;
+  padding: 16px 28.5px;
+}
+
+.project-img img {
+  width: 100%;
+}
