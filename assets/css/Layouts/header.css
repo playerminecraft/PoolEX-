@@ -339,6 +339,10 @@
   opacity: 1;
 }
 
+.header-toggler .btn-close {
+  background-image: url(../../images/header/header-close.svg);
+}
+
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
 }
