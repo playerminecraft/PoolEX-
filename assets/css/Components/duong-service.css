@@ -1,0 +1,108 @@
+.services {
+  position: relative;
+  overflow: hidden;
+}
+.services-wrapper {
+  padding-top: 6.1%;
+  padding-bottom: 3%;
+}
+.service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-cerulean-color);
+  text-align: center;
+  font-weight: 400;
+}
+
+.service-sub {
+  font-size: 32px;
+  line-height: 46px;
+  color: var(--steel-blue-color);
+}
+
+.services-card__img {
+  position: relative;
+  padding-top: 92%;
+  width: 92%;
+  margin: auto;
+}
+
+.services-card__img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+.service-title {
+  font-size: 32px;
+  line-height: 38.4px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+  color: var(--steel-blue-color);
+  font-weight: bold;
+}
+.services-card {
+  border: none;
+}
+
+.services-card .card-body {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28.4px;
+  margin-top: 34px;
+  padding: 16px 0px;
+}
+
+.services-decoration {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+.services-card__text {
+  color: var(--deep-blue-color);
+}
+
+.services-card:hover.services-card circle {
+  fill: #f0b529;
+  fill-opacity: initial;
+}
+.services-design:hover img {
+  background-image: url(../../images/services/services-design.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-construction:hover img {
+  background-image: url(../../images/services/services-construction.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-equipment:hover img {
+  background-image: url(../../images/services/services-equipment.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.services-renovation:hover img {
+  background-image: url(../../images/services/services-renovation.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.services-care:hover img {
+  background-image: url(../../images/services/services-care.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-card:hover {
+  cursor: pointer;
+}

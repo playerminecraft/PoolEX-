@@ -1,0 +1,137 @@
+.solution {
+  position: relative;
+  overflow: hidden;
+}
+.solution-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+}
+.solution-wrapper {
+  padding-top: 105px;
+  padding-bottom: 143px;
+}
+.solution-title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  color: var(--steel-blue-color);
+}
+.solution-desc {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 55px;
+  margin-top: 60px;
+  padding: 0px 150px;
+  color: var(--deep-blue-color);
+}
+
+.solution-card .card-header {
+  height: 6.75rem;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: var(--white-text-color);
+  background-color: var(--deep-blue-color);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution-card .card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 45px;
+  padding-bottom: 35px;
+  height: 9.25rem;
+}
+
+.solution-card .card-text {
+  color: var(--slate-gray-color);
+  padding: 0 30px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.solution-card .card-body {
+  background: #154a8126;
+}
+.solution-card__btn {
+  color: var(--deep-blue-color);
+  background: #f8fbff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 12px 18px;
+}
+
+.solution-card .card-title {
+  flex-direction: column;
+  color: var(--deep-blue-color);
+}
+
+.solution-card .card-title__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.solution-card .card-title__price {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38.4px;
+  text-align: center;
+}
+.card-footer__btn {
+  position: absolute;
+  bottom: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--goldenrod-color);
+  font-size: 28px;
+  line-height: 33.6px;
+  border-radius: 12px;
+  padding: 12px 24px;
+  border: none;
+  color: var(--white-text-color);
+}
+
+.solution-service {
+  height: 100%;
+  padding-bottom: 20%;
+}
+
+.solution-card.card {
+  height: 100%;
+  border-radius: 12px;
+}
+
+.solution-detail .swiper-slide {
+  height: initial;
+}
+
+.solution-card .card-footer {
+  padding-bottom: 106px;
+  background: #154a8126;
+  border: none;
+}
+
+.solution__decoration-top {
+  position: absolute;
+  top: 5%;
+  left: 0;
+}
+.solution__decoration-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
