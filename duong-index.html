@@ -1239,7 +1239,16 @@
     <!-- Start Header-toggler -->
     <div class="header-toggler offcanvas offcanvas-start" tabindex="-1" id="offcanvastoggler" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <button type="button" class="header-toggler__language">VN -</button>
+              </li>
+              <li class="breadcrumb-item" aria-current="page"><button type="button" class="header-toggler__language">EN -</button></li>
+            </ol>
+          </nav>
+        </h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
@@ -1255,7 +1264,13 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pool-childOne" aria-expanded="false" aria-controls="pool-childOne">Hình dáng bể bơi</button>
                   </h2>
                   <div id="pool-childOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    <div class="accordion-body">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Bể bơi hình chữ nhật</a>
+                        <a href="#" class="list-group-item list-group-item-action">Bể bơi hình vuông</a>
+                        <a href="#" class="list-group-item list-group-item-action">Bể bơi hình dạng bất kỳ</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="header-toggler__two accordion-item">
@@ -1263,7 +1278,13 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pool-childTwo" aria-expanded="false" aria-controls="pool-childTwo">Cấu trúc đáy bể</button>
                   </h2>
                   <div id="pool-childTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    <div class="accordion-body">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Bể bơi hiện đại</a>
+                        <a href="#" class="list-group-item list-group-item-action">Bể bơi vô cực</a>
+                        <a href="#" class="list-group-item list-group-item-action">Bể bơi tràn bờ</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="header-toggler__two accordion-item">
@@ -1271,7 +1292,15 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pool-childThree" aria-expanded="false" aria-controls="pool-childThree">Bậc thang</button>
                   </h2>
                   <div id="pool-childThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div class="accordion-body">
+                      <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-action">Dạng cung tròn</a>
+                        <a href="#" class="list-group-item list-group-item-action">Dạng độc lập</a>
+                        <a href="#" class="list-group-item list-group-item-action">Dạng cắt góc</a>
+                        <a href="#" class="list-group-item list-group-item-action">Dạng trải dài</a>
+                        <a href="#" class="list-group-item list-group-item-action">Dạng tùy chỉnh</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="header-toggler__two accordion-item">
@@ -1279,7 +1308,15 @@
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pool-childFour" aria-expanded="false" aria-controls="pool-childFour">Thác nước</button>
                   </h2>
                   <div id="pool-childFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div class="accordion-body">
+                      <div class="accordion-body">
+                        <div class="list-group">
+                          <a href="#" class="list-group-item list-group-item-action">Thác nước design</a>
+                          <a href="#" class="list-group-item list-group-item-action">Thác nước âm tường</a>
+                          <a href="#" class="list-group-item list-group-item-action">Thác nước tràn tự nhiên</a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="header-toggler__two accordion-item">
@@ -1304,7 +1341,41 @@
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#device-collapse" aria-expanded="false" aria-controls="device-collapse">THIẾT BỊ</button>
             </h2>
             <div id="device-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+              <div class="accordion-body">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="header-toggler__two accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#device-childOne" aria-expanded="false" aria-controls="device-childOne">Tuỳ chọn nâng cao</button>
+                    </h2>
+                    <div id="device-childOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <div class="list-group">
+                          <a href="#" class="list-group-item list-group-item-action">Giải pháp lọc nước</a>
+                          <a href="#" class="list-group-item list-group-item-action">Giải pháp khử trùng</a>
+                          <a href="#" class="list-group-item list-group-item-action">Thiết bị chiếu sáng</a>
+                          <a href="#" class="list-group-item list-group-item-action">Thiết bị vệ sinh</a>
+                          <a href="#" class="list-group-item list-group-item-action">Phụ kiện</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="header-toggler__two accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#device-childTwo" aria-expanded="false" aria-controls="device-childTwo">Tuỳ chọn cơ bản</button>
+                    </h2>
+                    <div id="device-childTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <div class="list-group">
+                          <a href="#" class="list-group-item list-group-item-action">Hệ thống cấp nhiệt</a>
+                          <a href="#" class="list-group-item list-group-item-action">Hệ thống sục massage</a>
+                          <a href="#" class="list-group-item list-group-item-action">Hệ thống bơi ngược dòng</a>
+                          <a href="#" class="list-group-item list-group-item-action">Robot vệ sinh</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="header-toggler__one accordion-item">
@@ -1312,57 +1383,33 @@
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#project-collapse" aria-expanded="false" aria-controls="flush-collapse">DỰ ÁN CỦA BẠN</button>
             </h2>
             <div id="project-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+              <div class="accordion-body">
+                <div class="list-group">
+                  <a href="#" class="list-group-item list-group-item-action">Các bước triển khai</a>
+                  <a href="#" class="list-group-item list-group-item-action">Thực hiện hóa dự án của bạn</a>
+                  <a href="#" class="list-group-item list-group-item-action">Giải pháp của chúng tôi</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="header-toggler__one accordion-item">
-            <h2 class="accordion-header" id="flush-support">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#support-collapse" aria-expanded="false" aria-controls="support-collapse">GIÁO DỤC & HỖ TRỢ</button>
-            </h2>
-            <div id="support-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
+            <button type="button" class="header-toggler__button btn">GIÁO DỤC & HỖ TRỢ</button>
           </div>
           <div class="header-toggler__one accordion-item">
-            <h2 class="accordion-header" id="flush-develop">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#develop-collapse" aria-expanded="false" aria-controls="develop-collapse">PHÁT TRIỂN BỀN VỮNG</button>
-            </h2>
-            <div id="develop-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
+            <button type="button" class="header-toggler__button btn">PHÁT TRIỂN BỀN VỮNG</button>
           </div>
           <div class="header-toggler__one accordion-item">
-            <h2 class="accordion-header" id="flush-catalog">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#catalog-collapse" aria-expanded="false" aria-controls="catalog-collapse">CATALOG</button>
-            </h2>
-            <div id="catalog-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
+            <button type="button" class="header-toggler__button btn">CATALOG</button>
           </div>
 
           <div class="header-toggler__one accordion-item">
-            <h2 class="accordion-header" id="flush-shop">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shop-collapse" aria-expanded="false" aria-controls="shop-collapse">cỬA HÀNG</button>
-            </h2>
-            <div id="shop-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
+            <button type="button" class="header-toggler__button btn">cỬA HÀNG</button>
           </div>
           <div class="header-toggler__one accordion-item">
-            <h2 class="accordion-header" id="flush-blog">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#blog-collapse" aria-expanded="false" aria-controls="blog-collapse">bLOG</button>
-            </h2>
-            <div id="blog-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
+            <button type="button" class="header-toggler__button btn">bLOG</button>
           </div>
           <div class="header-toggler__one accordion-item">
-            <h2 class="accordion-header" id="flush-recruitment">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#recruitment-collapse" aria-expanded="false" aria-controls="recruitment-collapse">TUYỂN DỤNG</button>
-            </h2>
-            <div id="recruitment-collapse" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-            </div>
+            <button type="button" class="header-toggler__button btn">TUYỂN DỤNG</button>
           </div>
         </div>
       </div>
