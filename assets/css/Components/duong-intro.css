@@ -13,14 +13,14 @@
   padding-bottom: 0%;
 }
 .intro-sub {
-  font-size: 24px;
+  font-size: max(16px, min(2vw, 24px));
   line-height: 28.8px;
   text-align: center;
 }
 
 .intro-title {
-  font-size: 96px;
-  line-height: 115.2px;
+  font-size: max(40px, min(5vw, 96px));
+  line-height: max(48px, min(5vw, 115.2px));
   text-align: center;
   margin-bottom: 10px;
   margin-top: 15px;
@@ -41,7 +41,7 @@
 }
 
 .intro-header {
-  margin-bottom: 65px;
+  margin-bottom: max(55px, min(5vw, 65px));
 }
 
 .intro .container {
@@ -61,10 +61,8 @@
 .intro-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: 32px;
-  line-height: 38.4px;
-  width: 280px;
-  height: 72px;
+  font-size: max(18px, min(3vw, 32px));
+  line-height: max(21.6px, min(3vw, 38.4px));
 }
 
 .intro-btn:hover {
@@ -78,7 +76,7 @@
 }
 
 .intro-pagination {
-  bottom: 25px !important;
+  bottom: max(0px, min(3vw, 25px)) !important;
 }
 
 .intro-pagination span.swiper-pagination-bullet {
@@ -87,8 +85,8 @@
   object-fit: contain;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
+  width: max(14.31px, min(3vw, 24px));
+  height: max(14.31px, min(3vw, 24px));
 }
 
 .intro-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
@@ -97,8 +95,8 @@
   object-fit: contain;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 24px;
-  height: 24px;
+  width: max(14.31px, min(3vw, 24px));
+  height: max(14.31px, min(3vw, 24px));
 }
 
 .widgets {
@@ -116,7 +114,7 @@
 
 .widgets-item {
   width: fit-content;
-  height: 72px;
+  height: max(34px, min(4.5vw, 72px));
   display: flex;
   align-items: center;
   background-color: var(--goldenrod-color);
@@ -124,12 +122,21 @@
 }
 
 .widgets-item__svg {
-  width: 72px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  height: max(34px, min(4.5vw, 72px));
+  width: max(34px, min(4.5vw, 72px));
+  margin: auto;
 }
+
+.widgets-item__svg svg {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  top: 20%;
+  left: 20%;
+  object-fit: cover;
+}
+
 .intro-note__text,
 .intro-mail__text,
 .intro-location__text {
@@ -158,4 +165,79 @@
 
 .intro-note:hover .intro-note__text {
   display: block;
+}
+
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {
+}
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {
+}
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {
+}
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {
+}
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {
+}
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {
+}
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {
+}
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {
+}
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {
+}
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {
+}
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {
+}
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {
+}
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {
+  .intro-desc {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+}
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {
 }

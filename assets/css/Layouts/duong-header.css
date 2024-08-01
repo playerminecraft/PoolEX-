@@ -158,16 +158,14 @@
   text-underline-offset: 15px;
 }
 
-.dropend {
-  padding-right: 5px !important;
-}
-
 .dropend .btn {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
+  color: var(--deep-blue-color);
+  grid-column-gap: 30px;
 }
 .dropend .dropdown-toggle::after {
   display: none;
@@ -186,8 +184,13 @@
 
 .nav__dropdown-menu .dropdown-item {
   color: var(--deep-blue-color);
-  padding: 15px 20px;
+  padding: 10px 20px;
   border-top: 1px solid #d9d9d9;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  padding-right: 10px;
 }
 .nav__dropdown-menu .dropend:hover,
 .nav__dropdown-menu .dropdown-item:hover {
@@ -262,19 +265,20 @@
 }
 
 .header-search__top input.form-control {
-  font-family: PoppinsVN;
+  color: var(--slate-gray-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 19.2px;
   text-align: left;
   background-color: transparent;
   border: none;
-  padding: 10px 28px;
+  padding: 15px 28px;
 }
 
 .header-search__top .input-group {
   background-color: #d9d9d98c;
   border-radius: 30px;
+  padding-right: 1%;
 }
 .header-search__top button#button-addon2 {
   border: none;
@@ -318,7 +322,7 @@
   width: fit-content;
   border-radius: 30px;
   text-align: center;
-  font-family: PoppinsVN;
+  color: var(--slate-gray-color);
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -329,11 +333,12 @@
 .header-search__title {
   padding-left: 50px;
   margin-bottom: 30px;
-  font-family: PoppinsVN;
+  color: var(--deep-blue-color);
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  font-weight: bold;
 }
 
 .offcanvas-backdrop.show {
