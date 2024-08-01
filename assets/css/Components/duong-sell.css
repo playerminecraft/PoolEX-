@@ -86,31 +86,36 @@
 }
 
 .sell-card .card-title {
-  font-size: 16px;
+  font-size: max(14px, min(2vw, 16px));
   font-weight: 400;
-  line-height: 19.2px;
+  line-height: max(12px, min(2vw, 19.2px));
   text-align: left;
   color: var(--deep-blue-color);
+  font-weight: bold;
 }
 
 .sell-card .card-text {
-  font-size: 16px;
+  font-size: max(14px, min(2vw, 16px));
   font-weight: 400;
-  line-height: 19.2px;
+  line-height: max(12px, min(2vw, 19.2px));
   text-align: left;
   color: var(--deep-blue-color);
 }
 .sell-price__after {
-  font-size: 24px;
+  font-size: max(18px, min(2vw, 24px));
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: max(21.6px, min(2vw, 24px));
   text-align: left;
+  font-weight: bold;
+  color: var(--deep-blue-color);
 }
 .sell-price__before {
   font-size: 14px;
   font-weight: 400;
   line-height: 16.8px;
   text-align: left;
+  color: var(--slate-gray-color);
+  text-decoration: line-through;
 }
 .sell-card.card {
   border: none;
@@ -119,6 +124,12 @@
 .sell-detail {
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   display: grid;
+}
+button.sell-add__btn.btn svg {
+  width: max(14px, min(2vw, 21px));
+}
+.sell-card .card-body {
+  padding: max(14px, min(2vw, 16px)) max(0px, min(1vw, 16px));
 }
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
