@@ -1,5 +1,5 @@
 section.about {
-  padding-top: 60px;
+  padding-top: max(20px, min(2vw, 60px));
 }
 
 .about-header {
@@ -11,17 +11,18 @@ section.about {
 }
 
 .about-title {
-  font-size: 32px;
-  line-height: 38.4px;
+  font-size: max(22px, min(2vw, 32px));
+  line-height: max(26.4px, min(2vw, 38.4px));
   color: var(--steel-blue-color);
+  font-weight: bold;
 }
 
 .about-desc {
-  font-size: 18px;
-  line-height: 30px;
-  margin-top: 30px;
-  margin-bottom: 55px;
-  padding: 0px 150px;
+  font-size: max(14px, min(2vw, 18px));
+  line-height: max(20px, min(2vw, 30px));
+  margin-top: max(15px, min(2vw, 30px));
+  margin-bottom: max(35px, min(2vw, 55px));
+  padding: 0px max(20px, min(2vw, 150px));
   color: var(--deep-blue-color);
 }
 
@@ -37,19 +38,13 @@ section.about {
   padding: 11% 0%;
 }
 
-.about-card .card-title {
-  text-align: center;
-  font-size: 24px;
-  line-height: 28.4px;
-}
-
 .about-card {
   background: transparent;
   border-radius: initial;
   border: none;
   height: 100%;
-  padding-top: 33px;
-  padding-bottom: 38px;
+  padding-top: max(20px, min(2vw, 33px));
+  padding-bottom: max(20px, min(2vw, 38px));
 }
 
 .about-img {
@@ -73,6 +68,7 @@ section.about {
   height: 100%;
   border-radius: 6px;
   position: relative;
+  margin-left: 15px;
 }
 
 .about-advantage:hover {
@@ -96,31 +92,115 @@ section.about {
 .about-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: 32px;
-  line-height: 38.4px;
-  padding: 16px 28.5px;
+  font-size: max(16px, min(1vw, 32px));
+  line-height: max(19.2px, min(1vw, 38.4px));
+  /* padding: 16px 28.5px; */
 }
 
 .about-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 0px;
+  padding: max(25px, min(1vw, 70px)) 0px;
 }
 
 .about-detail .card-body {
   text-align: center;
   margin-top: 8px;
+  padding: max(0px, min(1vw, 16px)) max(10px, min(2vw, 16px));
 }
 
 .about-detail .card-title {
-  font-size: 24px;
-  line-height: 28.4px;
+  font-size: max(18px, min(2vw, 24px));
+  line-height: max(21.16px, min(2vw, 28.4px));
   color: var(--deep-blue-color);
-  margin-bottom: 27px;
+  margin-bottom: max(10px, min(2vw, 27px));
+  text-align: center;
 }
 .about-detail .card-text {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: max(11px, min(2vw, 18px));
+  line-height: max(16px, min(2vw, 28px));
   color: var(--slate-gray-color);
+}
+
+.about-pagination {
+  display: none;
+}
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {
+}
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {
+}
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {
+}
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {
+}
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {
+}
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {
+}
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {
+}
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {
+}
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {
+}
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {
+}
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {
+}
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {
+}
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {
+  .about-detail .container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+}
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {
 }

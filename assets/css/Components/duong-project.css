@@ -7,17 +7,18 @@
 }
 
 .project-title {
-  font-size: 32px;
+  font-size: max(22px, min(2vw, 32px));
   color: var(--steel-blue-color);
-  line-height: 38.4px;
+  line-height: max(26.4px, min(2vw, 38.4px));
+  font-weight: bold;
 }
 
 .project-desc {
-  font-size: 18px;
-  line-height: 30px;
-  margin-top: 30px;
-  margin-bottom: 55px;
-  padding: 0px 150px;
+  font-size: max(14px, min(2vw, 18px));
+  line-height: max(20px, min(2vw, 30px));
+  margin-top: max(20px, min(2vw, 30px));
+  margin-bottom: max(10px, min(2vw, 55px));
+  /* padding: 0px 150px; */
   color: var(--deep-blue-color);
 }
 
@@ -25,17 +26,101 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 0px;
+  padding: max(25px, min(2vw, 70px)) 0px;
 }
 
 .project-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: 32px;
-  line-height: 38.4px;
-  padding: 16px 28.5px;
+  font-size: max(16px, min(1vw, 32px));
+  line-height: max(19.2px, min(1vw, 38.4px));
+  /* padding: 16px 28.5px; */
 }
 
 .project-img img {
   width: 100%;
+}
+
+.project-title br {
+  display: none;
+}
+
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {
+}
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {
+}
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {
+}
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {
+}
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {
+}
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {
+}
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {
+}
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {
+}
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {
+}
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {
+}
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {
+}
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {
+}
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {
+  .project .container {
+    padding: 0;
+    margin: 0;
+    max-width: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+  .project-title br {
+    display: block;
+  }
+}
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {
 }
