@@ -27,15 +27,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 0px;
+  padding: max(20px, min(2vw, 70px)) 0px;
 }
 
 .procedure-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: 32px;
-  line-height: 38.4px;
-  padding: 16px 28.5px;
+  font-size: max(16px, min(1vw, 32px));
+  line-height: max(19.2px, min(1vw, 38.4px));
+  /* padding: 16px 28.5px; */
 }
 
 .procedure-img {
@@ -118,6 +118,23 @@
   color: var(--slate-gray-color);
 }
 
+.procedure-prev::after {
+  font-size: 20px;
+  color: var(--deep-blue-color);
+}
+
+.procedure-next::after {
+  font-size: 20px;
+  color: var(--deep-blue-color);
+}
+
+.procedure-prev {
+  left: -8px;
+}
+.procedure-next {
+  right: -8px;
+}
+
 .procedure-title br {
   display: none;
 }
@@ -127,6 +144,9 @@
 .procedure-card .card-body {
   text-align: center;
   padding: 0 0px;
+}
+.procedure-pagination {
+  display: none;
 }
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
@@ -182,6 +202,9 @@
 
 /* Mobile & tablet */
 @media only screen and (max-width: 1023px) {
+  .procedure-arrow {
+    display: none;
+  }
 }
 
 /* Tablet */

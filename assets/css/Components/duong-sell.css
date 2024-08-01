@@ -1,16 +1,16 @@
 .sell-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: 32px;
-  line-height: 38.4px;
-  padding: 16px 28.5px;
+  font-size: max(16px, min(1vw, 32px));
+  line-height: max(19.2px, min(1vw, 38.4px));
+  /* padding: 16px 28.5px; */
 }
 
 .sell-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 0px;
+  padding: max(25px, min(2vw, 70px)) 0px;
 }
 
 .sell-top {
@@ -76,12 +76,13 @@
   align-items: center;
   text-align: center;
   font-weight: 400;
-  margin-bottom: 72px;
+  margin-bottom: max(15px, min(2vw, 72px));
 }
 .sell-title {
-  font-size: 32px;
-  line-height: 38.4px;
+  font-size: max(22px, min(2vw, 32px));
+  line-height: max(26.4px, min(2vw, 38.4px));
   color: var(--steel-blue-color);
+  font-weight: bold;
 }
 
 .sell-card .card-title {
@@ -113,4 +114,83 @@
 }
 .sell-card.card {
   border: none;
+  padding: 0 5%;
+}
+.sell-detail {
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  display: grid;
+}
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {
+}
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {
+}
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {
+}
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {
+}
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {
+}
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {
+}
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {
+}
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {
+}
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {
+}
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {
+}
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {
+}
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {
+}
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {
+  .sell-detail {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+}
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {
 }
