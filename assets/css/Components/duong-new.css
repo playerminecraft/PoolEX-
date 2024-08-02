@@ -6,19 +6,17 @@
   font-weight: 400;
 }
 .new-title {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 38.4px;
-  color: var(--dark-cerulean-color);
+  font-size: max(22px, min(2vw, 32px));
+  line-height: max(26.4px, min(2vw, 38.4px));
+  color: var(--deep-blue-color);
+  font-weight: bold;
 }
 
 .new-desc {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 55px;
-  margin-top: 60px;
-  padding: 0px 150px;
+  line-height: 20px;
+  margin-top: 20px;
   color: var(--deep-blue-color);
   display: none;
 }
@@ -30,20 +28,10 @@
 }
 
 .new-meta__date span {
-  font-family: PoppinsVN;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
   margin-left: 10px;
 }
 
 .new-meta__comment span {
-  font-family: PoppinsVN;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.2px;
-  text-align: left;
   margin-left: 10px;
 }
 
@@ -52,27 +40,38 @@
   display: flex;
   align-items: center;
 }
+.new-meta__comment svg,
+.new-meta__date svg {
+  width: max(14px, min(2vw, 24px));
+  height: max(14px, min(2vw, 24px));
+}
 
 .new-meta {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.new-card .card-text {
-  font-family: PoppinsVN;
-  font-size: 22px;
+  margin-bottom: max(10px, min(2vw, 20px));
+  flex-wrap: wrap;
+  color: var(--deep-blue-color);
+  font-size: max(10px, min(2vw, 16px));
   font-weight: 400;
-  line-height: 32px;
+  line-height: max(12px, min(2vw, 19.2px));
   text-align: left;
 }
 
+.new-card .card-text {
+  color: var(--deep-blue-color);
+  font-size: max(12px, min(2vw, 22px));
+  line-height: max(18px, min(2vw, 32px));
+  text-align: left;
+  font-weight: bold;
+}
+
 .new-content {
-  margin-top: 45px;
+  margin-top: max(40px, min(2vw, 45px));
 }
 .new-wrapper {
-  padding-top: 155px;
-  padding-bottom: 55px;
+  padding-top: max(60px, min(2vw, 155px));
+  padding-bottom: max(10px, min(2vw, 55px));
 }
 
 .new-card.card {
@@ -93,4 +92,99 @@
   top: 0;
   left: 0;
   object-fit: contain;
+}
+
+.new-next {
+  right: 2px;
+  top: 85px;
+}
+
+.new-prev {
+  left: 2px;
+  top: 85px;
+}
+
+.new-next::after {
+  font-size: 19px;
+  color: var(--goldenrod-color);
+}
+
+.new-prev::after {
+  font-size: 19px;
+  color: var(--goldenrod-color);
+}
+
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {
+}
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {
+}
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {
+}
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {
+}
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {
+}
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {
+}
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {
+}
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {
+}
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {
+}
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {
+}
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {
+}
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {
+}
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {
+  .new-desc {
+    display: block;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+}
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {
 }

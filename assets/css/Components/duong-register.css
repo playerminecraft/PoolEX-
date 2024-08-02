@@ -9,57 +9,57 @@
   width: 100%;
 }
 .register-account .card-body {
-  display: flex;
-  flex-direction: column;
-  grid-row-gap: 22px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  display: grid;
+  grid-row-gap: max(16px, min(2vw, 22px));
 }
 .card-footer__button {
   display: flex;
   justify-content: end;
 }
 .register-title {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 38.4px;
+  font-size: max(22px, min(2vw, 32px));
+  line-height: max(26.4px, min(2vw, 38.4px));
   text-align: center;
   color: var(--steel-blue-color);
+  font-weight: bold;
 }
 .register-desc {
   color: var(--slate-gray-color);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
+  font-size: max(14px, min(2vw, 18px));
+  line-height: max(20px, min(2vw, 30px));
   text-align: center;
 }
 .register-map {
-  margin-top: 60px;
+  margin-top: max(20px, min(2vw, 60px));
   padding-left: 15%;
 }
 
 .register-input.input-group {
-  height: 3.5rem;
+  height: max(3rem, min(2vw, 3.5rem));
   border-radius: 8px;
 }
 .card-header__title {
-  font-family: PoppinsVN;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 28.8px;
+  color: var(--deep-blue-color);
+  font-size: max(22px, min(2vw, 24px));
+  font-weight: bold;
+  line-height: max(26.4px, min(2vw, 28.8px));
   text-align: left;
 }
 .card-header__sub {
-  font-family: PoppinsVN;
-  font-size: 16px;
+  color: var(--slate-gray-color);
+  font-size: max(14px, min(2vw, 16px));
   font-weight: 400;
-  line-height: 19.2px;
+  line-height: max(16.8px, min(2vw, 19.2px));
   text-align: left;
   margin-top: 10px;
 }
 .register-card .card-footer__title {
-  font-family: PoppinsVN;
-  font-size: 24px;
+  color: var(--deep-blue-color);
+  font-size: max(16px, min(2vw, 24px));
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: max(19.2px, min(2vw, 28.8px));
   text-align: left;
   margin-bottom: 20px;
 }
@@ -67,6 +67,7 @@
   border: none;
   background-color: transparent;
   padding: 8px 25px;
+  padding-top: 20px;
 }
 
 .register-account .card-footer {
@@ -85,20 +86,152 @@
 
 .card-footer__button .btn {
   border-radius: 28px;
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
   color: var(--white-text-color);
-  font-size: 24px;
+  font-size: max(16px, min(2vw, 24px));
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: max(19.2px, min(2vw, 28.8px));
   text-align: left;
 }
 
 .card-footer__input {
-  height: 6.188rem;
+  height: max(4.125rem, min(2vw, 6.188rem));
   border-radius: 8px;
 }
 
 .card-footer__button {
-  margin-top: 50px;
-  margin-bottom: 52px;
+  margin-top: max(25px, min(2vw, 50px));
+  margin-bottom: max(25px, min(2vw, 52px));
+}
+.register-input input.form-control {
+  color: var(--slate-gray-color);
+  font-size: max(16px, min(2vw, 18px));
+  font-weight: 400;
+  line-height: max(16.8px, min(2vw, 21.6px));
+  text-align: left;
+}
+
+.register-name {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+}
+.register-phone {
+  grid-row: 2;
+  grid-column: 1 / span 2;
+}
+
+.register-email {
+  grid-row: 3;
+  grid-column: 1 / span 2;
+}
+.register-company {
+  grid-row: 4;
+  grid-column: 1 / span 2;
+}
+.register-document {
+  grid-row: 5;
+  grid-column: 1 / span 2;
+}
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {
+}
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {
+}
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {
+}
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {
+}
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {
+}
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {
+}
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {
+}
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {
+}
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {
+}
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {
+}
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {
+}
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {
+}
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+  .register-map {
+    padding-left: 10px;
+  }
+  .register-account {
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+  .register-wrapper {
+    gap: 36px;
+  }
+
+  .register-phone {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .register-email {
+    grid-row: 2;
+    grid-column: 2;
+  }
+  .register-company {
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+  .register-document {
+    grid-row: 4;
+    grid-column: 1 / span 2;
+  }
+  .register-account .card-body {
+    grid-template-rows: repeat(4, 1fr);
+    gap: max(16px, min(2vw, 22px));
+  }
+}
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {
 }
