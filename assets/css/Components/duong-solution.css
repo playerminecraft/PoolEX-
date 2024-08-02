@@ -10,30 +10,34 @@
   font-weight: 400;
 }
 .solution-wrapper {
-  padding-top: 105px;
-  padding-bottom: 143px;
+  padding-top: max(60px, min(2vw, 105px));
+  padding-bottom: max(30px, min(2vw, 143px));
 }
 .solution-title {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 38.4px;
+  font-size: max(22px, min(2vw, 32px));
+  line-height: max(26.4px, min(2vw, 38.4px));
   color: var(--steel-blue-color);
+  font-weight: bold;
 }
+
+.solution-title br {
+  display: none;
+}
+
 .solution-desc {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  margin-bottom: 55px;
-  margin-top: 60px;
-  padding: 0px 150px;
+  font-size: max(14px, min(2vw, 18px));
+  line-height: max(20px, min(2vw, 30px));
+  margin-bottom: max(20px, min(2vw, 55px));
+  margin-top: max(30px, min(2vw, 60px));
+  /* padding: 0px 150px; */
   color: var(--deep-blue-color);
 }
 
 .solution-card .card-header {
-  height: 6.75rem;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
+  height: max(4.375rem, min(2vw, 6.75rem));
+  font-size: max(14px, min(2vw, 24px));
+  font-weight: bold;
+  line-height: max(20px, min(2vw, 36px));
   text-align: center;
   color: var(--white-text-color);
   background-color: var(--deep-blue-color);
@@ -49,15 +53,15 @@
   align-items: center;
   padding-top: 45px;
   padding-bottom: 35px;
-  height: 9.25rem;
+  height: max(5.313rem, min(2vw, 9.25rem));
 }
 
 .solution-card .card-text {
   color: var(--slate-gray-color);
   padding: 0 30px;
-  font-size: 18px;
+  font-size: max(11px, min(2vw, 20px));
   font-weight: 400;
-  line-height: 30px;
+  line-height: max(18px, min(2vw, 24px));
 }
 
 .solution-card .card-body {
@@ -66,9 +70,9 @@
 .solution-card__btn {
   color: var(--deep-blue-color);
   background: #f8fbff;
-  font-size: 24px;
+  font-size: max(14px, min(2vw, 24px));
   font-weight: 400;
-  line-height: 28.8px;
+  line-height: max(16.8px, min(2vw, 28.8px));
   text-align: center;
   border-radius: 12px;
   padding: 12px 18px;
@@ -80,15 +84,15 @@
 }
 
 .solution-card .card-title__text {
-  font-size: 20px;
+  font-size: max(14px, min(2vw, 20px));
   font-weight: 400;
-  line-height: 24px;
+  line-height: max(16.8px, min(2vw, 24px));
   text-align: center;
 }
 .solution-card .card-title__price {
-  font-size: 32px;
+  font-size: max(16px, min(2vw, 32px));
   font-weight: 400;
-  line-height: 38.4px;
+  line-height: max(19.2px, min(2vw, 38.4px));
   text-align: center;
 }
 .card-footer__btn {
@@ -97,17 +101,16 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--goldenrod-color);
-  font-size: 28px;
-  line-height: 33.6px;
+  font-size: max(16px, min(2vw, 28px));
+  line-height: max(19.2px, min(2vw, 33.6px));
   border-radius: 12px;
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
   border: none;
   color: var(--white-text-color);
 }
 
 .solution-service {
   height: 100%;
-  padding-bottom: 20%;
 }
 
 .solution-card.card {
@@ -115,12 +118,16 @@
   border-radius: 12px;
 }
 
-.solution-detail .swiper-slide {
-  height: initial;
+.solution-detail {
+  width: 100%;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  padding-bottom: 20%;
 }
 
 .solution-card .card-footer {
-  padding-bottom: 106px;
+  padding-bottom: max(30px, min(2vw, 106px));
   background: #154a8126;
   border: none;
 }
@@ -134,4 +141,86 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {
+}
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {
+}
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {
+}
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {
+}
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {
+}
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {
+}
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {
+}
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {
+}
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {
+}
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {
+}
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {
+}
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {
+}
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+  .solution-title br {
+    display: block;
+  }
+  .solution-card .card-body {
+    padding: 0px;
+  }
+  .solution-card .card-title {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {
 }

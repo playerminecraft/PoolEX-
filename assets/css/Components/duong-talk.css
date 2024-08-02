@@ -5,12 +5,11 @@ section.talk {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.talk .container {
-  padding-top: 95px;
-  padding-bottom: 15%;
-}
+
 .talk-wrapper {
   padding-right: 23.5%;
+  padding-top: 95px;
+  padding-bottom: 15%;
 }
 .talk-header {
   display: flex;
@@ -18,13 +17,12 @@ section.talk {
   align-items: center;
   text-align: center;
   font-weight: 400;
-  margin-bottom: 72px;
+  margin-bottom: max(25px, min(2vw, 72px));
   color: var(--white-text-color);
 }
 .talk-title {
-  font-size: 2.625rem;
-  font-weight: 400;
-  line-height: 60px;
+  font-size: max(22px, min(2vw, 32px));
+  line-height: max(26.4px, min(2vw, 38.4px));
   text-align: center;
   text-transform: uppercase;
   color: var(--dark-cerulean-color);
@@ -33,11 +31,11 @@ section.talk {
 
 .talk-paragraph {
   color: var(--white-text-color);
-  font-size: 24px;
+  font-size: max(11px, min(2vw, 24px));
   font-weight: 400;
-  line-height: 36px;
+  line-height: max(18px, min(2vw, 36px));
   text-align: center;
-  padding: 0 16%;
+  padding: 0 max(15%, min(2vw, 16%));
   padding-top: 2%;
 }
 
@@ -45,11 +43,17 @@ section.talk {
   color: white !important;
   opacity: 0.4;
 }
+
+.talk-next.swiper-button-next::after {
+  font-size: max(20px, min(2vw, 44px));
+}
 .talk-prev.swiper-button-prev {
   color: white !important;
   opacity: 0.4;
 }
-
+.talk-prev.swiper-button-prev::after {
+  font-size: max(20px, min(2vw, 44px));
+}
 .talk-pagination {
   display: none;
 }
@@ -58,4 +62,88 @@ section.talk {
   position: absolute;
   top: 0;
   left: 15%;
+}
+
+/* PC Alway  */
+@media only screen and (max-width: 1920px) {
+}
+
+/* PC BIG  */
+@media only screen and (min-width: 1650px) {
+}
+
+/* PC BIG Lower */
+@media only screen and (max-width: 1650px) {
+}
+
+/* PC BIG 16 */
+@media only screen and (max-width: 1600px) {
+}
+
+/* PC fit */
+@media only screen and (max-width: 1440px) {
+}
+
+/* PC fit-sub */
+@media only screen and (max-width: 1399px) {
+}
+
+/* PC fit lower */
+@media only screen and (max-width: 1366px) {
+}
+
+/* PC fit lower */
+@media only screen and (min-width: 1366px) {
+}
+
+/* PC fit small */
+@media only screen and (max-width: 1300px) {
+}
+
+/* PC HD */
+@media only screen and (max-width: 1283px) {
+}
+
+/* PC Change */
+@media only screen and (min-width: 1023px) and (max-width: 1241px) {
+}
+
+/* PC LOWER  min-1023px */
+@media only screen and (min-width: 1023px) and (max-width: 1240px) {
+}
+
+/* Only PC devices */
+@media only screen and (min-width: 1023px) {
+}
+
+/* Mobile & tablet */
+@media only screen and (max-width: 1023px) {
+  .talk-wrapper {
+    padding-right: 0;
+  }
+  .talk-quotation {
+    display: none;
+  }
+  .talk {
+    background-position: right !important;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+}
+
+/* Min Mobile */
+@media only screen and (min-width: 740px) {
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+  .talk-wrapper {
+    padding-bottom: 30%;
+  }
+}
+
+/* Phone Small */
+@media only screen and (max-width: 395px) {
 }
