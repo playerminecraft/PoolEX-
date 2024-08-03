@@ -109,6 +109,7 @@
   font-weight: 400;
   line-height: max(16.8px, min(2vw, 21.6px));
   text-align: left;
+  background: #fffefe;
 }
 
 .register-name {

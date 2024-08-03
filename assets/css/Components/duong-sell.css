@@ -129,7 +129,7 @@ button.sell-add__btn.btn svg {
   width: max(14px, min(2vw, 21px));
 }
 .sell-card .card-body {
-  padding: max(14px, min(2vw, 16px)) max(0px, min(1vw, 16px));
+  padding: max(14px, min(2vw, 16px)) 0px;
 }
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
