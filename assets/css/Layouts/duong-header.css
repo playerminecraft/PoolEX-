@@ -1,3 +1,8 @@
+.header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
 .header-top {
   height: 42px;
   background-color: var(--goldenrod-color);
@@ -19,14 +24,19 @@
 }
 
 .header-bottom {
-  height: max(42px, min(10vw, 100px));
-  background-color: var(--deep-blue-color);
   width: 100%;
   position: absolute;
   font-size: max(13.4px, min(1vw, 18px));
   line-height: 21.6px;
   z-index: 5;
   color: var(--white-text-color);
+  background-color: transparent;
+  /* background: var(--deep-blue-color); */
+  padding: 0.5% 0px;
+}
+
+.header-bottom .scroll {
+  background: var(--deep-blue-color);
 }
 
 .header-wraper {
@@ -37,11 +47,21 @@
 }
 
 .header-brand {
-  margin: 0;
+}
+
+.header-brand__img {
+  position: relative;
+  padding-top: 5%;
+  width: 15%;
 }
 
 .header-brand__img img {
-  width: max(81px, min(15vw, 182px));
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
 }
 
 .header-bottom .container {
@@ -58,7 +78,6 @@
 .header-right {
   display: flex;
   flex-direction: row;
-  gap: 35px;
 }
 
 .header-left .header-email {
@@ -76,7 +95,6 @@
 
 .header-left .nav-link {
   display: flex;
-  gap: 8px;
   font-size: 14px;
   line-height: 16.8px;
   text-align: left;
@@ -114,6 +132,8 @@
 .header-bottom .nav-link,
 .header-bottom .dropdown-toggle {
   color: var(--white-text-color);
+  font-size: max(12px, min(1.23vw, 18px));
+  line-height: 30px;
 }
 
 .header-collapse {
@@ -408,12 +428,6 @@
 
 /* Mobile & tablet */
 @media only screen and (max-width: 1023px) {
-  .header-bottom .container-fluid {
-  }
-  .header-bottom .navbar {
-    padding: 0px;
-  }
-
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb%28255, 255, 255%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
   }

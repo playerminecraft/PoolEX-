@@ -128,14 +128,18 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-.container {
-  max-width: 1200px;
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
-button:active,
 input:focus,
 button:focus {
   outline: none;
   border: none;
   box-shadow: none;
+}
+
+button:hover {
 }

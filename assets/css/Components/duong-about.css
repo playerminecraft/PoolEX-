@@ -71,15 +71,12 @@ section.about {
   margin-left: 15px;
 }
 
-.about-advantage:hover {
-  cursor: pointer;
-}
 .about-title:hover {
-  text-decoration: underline;
+  /* text-decoration: underline;
   text-decoration-color: var(--goldenrod-color);
   text-decoration-thickness: 3px;
   text-underline-offset: 16px;
-  cursor: pointer;
+  cursor: pointer; */
 }
 
 .about-title:hover.about-detail {

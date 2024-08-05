@@ -5,12 +5,13 @@
   object-fit: contain;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  position: relative;
 }
 
 .intro-wrapper {
   height: 100%;
-  padding-top: 10%;
-  padding-bottom: 0%;
 }
 .intro-sub {
   font-size: max(16px, min(2vw, 24px));
@@ -41,7 +42,7 @@
 }
 
 .intro-header {
-  margin-bottom: max(55px, min(5vw, 65px));
+  margin-bottom: 4.063rem;
 }
 
 .intro .container {
@@ -54,7 +55,6 @@
   flex-direction: column;
   align-items: center;
   color: var(--white-text-color);
-  padding-bottom: 12%;
   position: relative;
 }
 
@@ -76,7 +76,7 @@
 }
 
 .intro-pagination {
-  bottom: max(0px, min(3vw, 25px)) !important;
+  bottom: 30px !important;
 }
 
 .intro-pagination span.swiper-pagination-bullet {
@@ -130,10 +130,10 @@
 
 .widgets-item__svg svg {
   position: absolute;
-  width: 65%;
-  height: 65%;
-  top: 20%;
-  left: 20%;
+  width: 50%;
+  height: 50%;
+  top: 27%;
+  left: 27%;
   object-fit: cover;
 }
 
@@ -224,6 +224,9 @@
   .intro-desc {
     display: none;
   }
+  .intro-header {
+    margin-bottom: 1.063rem;
+  }
 }
 
 /* Tablet */
@@ -236,6 +239,13 @@
 
 /* Mobile */
 @media only screen and (max-width: 739px) {
+  .intro {
+    padding-top: 7rem;
+  }
+  .header-brand__img {
+    padding-top: 7%;
+    width: 20%;
+  }
 }
 
 /* Phone Small */

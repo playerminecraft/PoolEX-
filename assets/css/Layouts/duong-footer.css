@@ -76,6 +76,9 @@
   color: var(--white-text-color);
 }
 
+.footer-connect__svg {
+  position: relative;
+}
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
 }

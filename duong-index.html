@@ -30,9 +30,9 @@
       <div class="header-top d-none d-lg-block">
         <div class="container">
           <div class="header-top__wrapper">
-            <nav class="header-left navbar-nav">
+            <nav class="header-left navbar-nav gap-3">
               <li class="header-phone nav-item">
-                <a class="nav-link" href="tel:+84966566635">
+                <a class="nav-link gap-1" href="tel:+84966566635">
                   <div class="header-phone__svg nav-link__svg">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -45,7 +45,7 @@
                 </a>
               </li>
               <li class="header-email nav-item">
-                <a class="nav-link" href="mailto:info@poolex.vn">
+                <a class="nav-link gap-1" href="mailto:info@poolex.vn">
                   <div class="header-email__svg nav-link__svg">
                     <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -58,8 +58,8 @@
                 </a>
               </li>
             </nav>
-            <nav class="header-right navbar-nav">
-              <ul class="header-right__menu">
+            <nav class="header-right navbar-nav gap-4">
+              <ul class="header-right__menu gap-3">
                 <li class="header-catalog nav-item">
                   <a class="nav-link" href="#">CATALOG</a>
                 </li>
@@ -84,20 +84,18 @@
           </div>
         </div>
       </div>
-      <div class="header-bottom">
+      <div class="header-bottom" id="header">
         <div class="container">
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="header-brand navbar-brand" href="#">
-              <div class="header-brand__img">
-                <img src="./assets/images/logo/logo.png" alt="" />
-              </div>
-            </a>
+          <nav class="navbar navbar-expand-lg navbar-light gap-4">
+            <a href="#" class="header-brand__img stretched-link"><img src="./assets/images/logo/logo.png" alt="" /></a>
+            <!-- <a class="header-brand navbar-brand" href="#">
+            </a> -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvastoggler" aria-controls="offcanvastoggler" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="header-wraper">
+            <div class="header-wraper gap-4">
               <div class="header-collapse collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="header-navbar navbar-nav mb-lg-0">
+                <ul class="header-navbar navbar-nav mb-lg-0 gap-3">
                   <li class="header-dropdown nav-item dropdown">
                     <button class="header-toggle btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">BỂ BƠI</button>
                     <ul class="nav__dropdown-menu dropdown-menu">
@@ -228,9 +226,7 @@
         </div>
       </div>
     </header>
-
     <!-- End Header -->
-
     <!-- Begin Content -->
     <main class="home">
       <!-- Begin Intro -->
@@ -274,12 +270,12 @@
                     </div>
                     <div class="intro-desc">Nơi cung cấp những giải pháp toàn diện cho bể bơi!</div>
                   </div>
-                  <button type="button" class="intro-btn btn">LIÊN HỆ NGAY</button>
+                  <a href="#" class="btn intro-btn">LIÊN HỆ NGAY</a>
                 </div>
               </div>
             </div>
-            <div class="intro-pagination swiper-pagination"></div>
           </div>
+          <div class="intro-pagination swiper-pagination"></div>
         </div>
         <div class="widgets">
           <div class="widgets-item intro-note">
@@ -393,9 +389,8 @@
                       <div class="services-card__img">
                         <img src="./assets/images/services/services-care.png" alt="" />
                       </div>
-
                       <div class="card-body">
-                        <p class="services-card__text card-text">Dịch vụ <br />chăm sóc bể bơi</p>
+                        <p class="services-card__text card-text">Dịch vụ <br id="services-care__br" />chăm sóc bể bơi</p>
                       </div>
                     </div>
                   </div>
@@ -482,7 +477,7 @@
           </div>
         </div>
         <div class="about-bottom">
-          <button type="button" class="about-btn btn">VỀ CHÚNG TÔI</button>
+          <a href="#" class="about-btn btn">VỀ CHÚNG TÔI</a>
         </div>
       </section>
       <!-- End About -->
@@ -503,7 +498,7 @@
             <img src="./assets/images/project/project-house.png" alt="" />
           </div>
           <div class="project-bottom">
-            <button type="button" class="project-btn btn">HIỆN THỰC HOÁ GIẤC MƠ</button>
+            <a href="#" class="project-btn btn">HIỆN THỰC HOÁ GIẤC MƠ</a>
           </div>
         </div>
       </section>
@@ -585,7 +580,7 @@
             </div>
           </div>
           <div class="procedure-bottom">
-            <button type="button" class="procedure-btn btn">BẮT ĐẦU</button>
+            <a href="#" class="procedure-btn btn">BẮT ĐẦU</a>
           </div>
         </div>
       </section>
@@ -723,7 +718,7 @@
             </div>
           </div>
           <div class="sell-bottom">
-            <button type="button" class="sell-btn btn">CỬA HÀNG</button>
+            <a href="#" class="sell-btn btn">BẮT ĐẦU</a>
           </div>
         </div>
       </section>
@@ -740,26 +735,18 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="talk-paragraph">Khi thực hiện dự án tôi đã tìm hiểu rất nhiều đơn vị cung cấp thiết bị bể bơi. Tuy nhiên tôi đã quyết định lựa chọn Poolex bởi không chỉ vì sản phẩm mà họ có một dịch vụ lâu dài.</div>
-                    <div class="talk-quotation">
-                      <img src="./assets/images/talk/talk-quotation.png" alt="" />
-                    </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="talk-paragraph">Tôi đã rất hài lòng khi lựa chọn Poolex là nhà cung cấp thiết bị cho hạng mục bể bơi của gia đình tôi. Nhờ những tư vấn chính xác</div>
-                    <div class="talk-quotation">
-                      <img src="./assets/images/talk/talk-quotation.png" alt="" />
-                    </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="talk-paragraph">Tôi thực sự rất hài lòng. Bể bơi của tôi đã rất tệ cho đến khi bên công ty cử người qua xử lý. Họ làm việc rất chuyên nghiệp và không mất quá nhiều thời gian để khiến cho bể bơi của tôi trở lên đẹp hơn.</div>
-                    <div class="talk-quotation"><img src="./assets/images/talk/talk-quotation.png" alt="" /></div>
                   </div>
                 </div>
-                <div class="talk-pagination swiper-pagination"></div>
-                <div class="talk-next swiper-button-next"></div>
-                <div class="talk-prev swiper-button-prev"></div>
               </div>
             </div>
+            <div class="talk-next swiper-button-next"></div>
+            <div class="talk-prev swiper-button-prev"></div>
           </div>
         </div>
       </section>
@@ -1030,6 +1017,7 @@
                       fill="#FFFEFE"
                     />
                   </svg>
+                  <a href="#" class="stretched-link"></a>
                 </div>
                 <div class="footer-connect__svg">
                   <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1043,6 +1031,7 @@
                     />
                     <path d="M22.367 18.0299C22.3621 19.9649 20.8221 21.4787 18.8645 21.4724C16.9393 21.4661 15.4308 19.9164 15.4385 17.9525C15.4455 16.04 16.9884 14.5248 18.9242 14.5283C20.8571 14.5318 22.3719 16.0717 22.367 18.0299Z" fill="#FFFEFE" />
                   </svg>
+                  <a href="#" class="stretched-link"></a>
                 </div>
                 <div class="footer-connect__svg">
                   <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1051,6 +1040,7 @@
                       fill="#FFFEFE"
                     />
                   </svg>
+                  <a href="#" class="stretched-link"></a>
                 </div>
               </div>
               <div class="footer-address__vector-left"></div>

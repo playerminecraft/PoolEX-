@@ -2,9 +2,7 @@
 function handleShowSearch() {
   const overlaySearch = document.querySelector(".header-overlay");
   const searchContent = document.querySelector(".header-search");
-  const searchIconSearch = document.querySelector(
-    ".header-search__mobile .icon-search"
-  );
+  const searchIconSearch = document.querySelector(".header-search__mobile .icon-search");
   const searchIconClose = document.getElementById("icon-close");
 
   const addClass = (element, className) => {
@@ -58,6 +56,17 @@ function handleShowSearch() {
 //     parentMore.classList.remove("active");
 //   });
 // }
+
+// Start Header Scroll Change
+const header = document.getElementById("header");
+document.addEventListener("scroll", () => {
+  if (window.scrollY > 0) {
+    header.classList.add("scroll");
+  } else {
+    header.classList.remove("scroll");
+  }
+});
+// End Header Scroll Change
 
 (() => {
   handleShowSearch();
