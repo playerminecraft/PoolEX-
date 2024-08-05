@@ -17,9 +17,8 @@
 .procedure-desc {
   font-size: max(14px, min(2vw, 18px));
   line-height: max(20px, min(2vw, 30px));
-  margin-top: 30px;
-  margin-bottom: max(10px, min(2vw, 55px));
-  /* padding: 0px 150px; */
+  margin-top: 1.875rem;
+  margin-bottom: 3.438rem;
   color: var(--deep-blue-color);
 }
 
@@ -27,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: max(20px, min(2vw, 70px)) 0px;
+  padding: 4.375rem 0px;
 }
 
 .procedure-btn {
@@ -94,8 +93,8 @@
 .procedure-card .card-title {
   display: flex;
   justify-content: center;
-  margin-top: max(5px, min(2vw, 10px));
-  margin-bottom: max(5px, min(2vw, 30px));
+  margin-top: 0.625rem;
+  margin-bottom: 1.875rem;
 }
 .circleg {
   width: max(20px, min(2vw, 36px));
@@ -204,6 +203,17 @@
 @media only screen and (max-width: 1023px) {
   .procedure-arrow {
     display: none;
+  }
+  .procedure-desc {
+    margin-top: 0.875rem;
+    margin-bottom: 0.438rem;
+  }
+  .procedure-card .card-title {
+    margin-top: 0.625rem;
+    margin-bottom: 0.875rem;
+  }
+  .procedure-bottom {
+    padding: 1.375rem 0px;
   }
 }
 

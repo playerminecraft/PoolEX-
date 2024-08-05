@@ -33,7 +33,7 @@ section.talk {
 
 .talk-paragraph {
   color: var(--white-text-color);
-  font-size: max(11px, min(2vw, 24px));
+  font-size: max(12px, min(2vw, 24px));
   font-weight: 400;
   line-height: max(18px, min(2vw, 36px));
   text-align: center;
@@ -141,6 +141,8 @@ section.talk {
 @media only screen and (max-width: 1023px) {
   .talk-wrapper {
     padding-right: 0;
+    width: 90%;
+    margin: 0 auto;
   }
   .talk-quotation {
     display: none;
@@ -150,6 +152,14 @@ section.talk {
   }
   .talk-paragraph::before {
     display: none;
+  }
+  .talk-next.swiper-button-next {
+    top: 76%;
+    right: -20px;
+  }
+  .talk-prev.swiper-button-prev {
+    top: 76%;
+    left: -20px;
   }
 }
 
@@ -163,9 +173,6 @@ section.talk {
 
 /* Mobile */
 @media only screen and (max-width: 739px) {
-  .talk-wrapper {
-    padding-bottom: 30%;
-  }
 }
 
 /* Phone Small */

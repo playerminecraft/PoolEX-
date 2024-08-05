@@ -1,5 +1,5 @@
 section.about {
-  padding-top: max(20px, min(2vw, 60px));
+  padding-top: 3.75rem;
 }
 
 .about-header {
@@ -22,7 +22,6 @@ section.about {
   line-height: max(20px, min(2vw, 30px));
   margin-top: max(15px, min(2vw, 30px));
   margin-bottom: max(35px, min(2vw, 55px));
-  padding: 0px max(20px, min(2vw, 150px));
   color: var(--deep-blue-color);
 }
 
@@ -98,7 +97,7 @@ section.about {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: max(25px, min(1vw, 70px)) 0px;
+  padding: 4.375rem 0px;
 }
 
 .about-detail .card-body {
@@ -183,6 +182,12 @@ section.about {
     margin-left: 0;
     margin-right: 0;
     max-width: none;
+  }
+  section.about {
+    padding-top: 0.75rem;
+  }
+  .about-bottom {
+    padding: 1.563rem 0px;
   }
 }
 

@@ -241,6 +241,7 @@
 @media only screen and (max-width: 739px) {
   .intro {
     padding-top: 7rem;
+    padding-bottom: 7rem;
   }
   .header-brand__img {
     padding-top: 7%;

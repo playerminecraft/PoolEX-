@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: max(25px, min(2vw, 70px)) 0px;
+  padding: 4.375rem 0px;
 }
 
 .project-btn {
@@ -103,6 +103,9 @@
     padding: 0;
     margin: 0;
     max-width: none;
+  }
+  .project-bottom {
+    padding: 1.375rem 0px;
   }
 }
 

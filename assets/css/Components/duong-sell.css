@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: max(25px, min(2vw, 70px)) 0px;
+  padding: 4.375rem 0px;
 }
 
 .sell-top {
@@ -76,7 +76,7 @@
   align-items: center;
   text-align: center;
   font-weight: 400;
-  margin-bottom: max(15px, min(2vw, 72px));
+  margin-bottom: 4.5rem;
 }
 .sell-title {
   font-size: max(22px, min(2vw, 32px));
@@ -126,10 +126,10 @@
   display: grid;
 }
 button.sell-add__btn.btn svg {
-  width: max(14px, min(2vw, 21px));
+  width: 1.313rem;
 }
 .sell-card .card-body {
-  padding: max(14px, min(2vw, 16px)) 0px;
+  padding: 1rem 0px;
 }
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
@@ -187,6 +187,15 @@ button.sell-add__btn.btn svg {
 @media only screen and (max-width: 1023px) {
   .sell-detail {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .sell-header {
+    margin-bottom: 1.5rem;
+  }
+  .sell-bottom {
+    padding: 1.375rem 0px;
+  }
+  button.sell-add__btn.btn svg {
+    width: 0.875rem;
   }
 }
 

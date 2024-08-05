@@ -39,8 +39,8 @@
 .service-title {
   font-size: max(22px, min(2vw, 32px));
   line-height: max(26.4px, min(2vw, 38.4px));
-  margin-top: max(15px, min(2vw, 75px));
-  margin-bottom: max(15px, min(2vw, 50px));
+  margin-top: 4.688rem;
+  margin-bottom: 3.125rem;
   color: var(--steel-blue-color);
   font-weight: bold;
 }
@@ -202,11 +202,16 @@
 
 /* Mobile */
 @media only screen and (max-width: 739px) {
-  .services-card {
-    padding-left: 10px;
+  .services {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   .services-card br {
     display: block;
+  }
+  .service-title {
+    margin-top: 1.688rem;
+    margin-bottom: 1.125rem;
   }
 }
 
