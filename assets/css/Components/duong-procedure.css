@@ -1,9 +1,13 @@
+.procedure {
+  position: relative;
+  padding-top: max(57.4px, min(7vw, 148px));
+}
 .procedure-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  font-weight: 400;
+  position: relative;
 }
 
 .procedure-title {
@@ -17,8 +21,8 @@
 .procedure-desc {
   font-size: max(14px, min(2vw, 18px));
   line-height: max(20px, min(2vw, 30px));
-  margin-top: 1.875rem;
-  margin-bottom: 3.438rem;
+  margin-top: 30px; /* 1.875rem */
+  margin-bottom: 55px; /* 3.438rem */
   color: var(--deep-blue-color);
 }
 
@@ -26,7 +30,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4.375rem 0px;
+  padding: 70px 0px; /* 4.375rem */
 }
 
 .procedure-btn {
@@ -39,7 +43,7 @@
 
 .procedure-img {
   position: relative;
-  height: 6rem;
+  height: 96px; /* 6rem */
   margin: auto;
 }
 
@@ -93,8 +97,8 @@
 .procedure-card .card-title {
   display: flex;
   justify-content: center;
-  margin-top: 0.625rem;
-  margin-bottom: 1.875rem;
+  margin-top: 10px; /* 0.625rem */
+  margin-bottom: 30px; /* 1.875rem */
 }
 .circleg {
   width: max(20px, min(2vw, 36px));
@@ -147,6 +151,18 @@
 .procedure-pagination {
   display: none;
 }
+
+.procedure-decoration {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 69%;
+}
+
+.procedure-decoration img {
+  width: 100%;
+}
+
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
 }
@@ -201,24 +217,27 @@
 
 /* Mobile & tablet */
 @media only screen and (max-width: 1023px) {
-  .procedure-arrow {
-    display: none;
-  }
   .procedure-desc {
-    margin-top: 0.875rem;
-    margin-bottom: 0.438rem;
+    margin-top: 14px; /* 0.875rem */
+    margin-bottom: 7px; /* 0.438rem */
   }
   .procedure-card .card-title {
-    margin-top: 0.625rem;
-    margin-bottom: 0.875rem;
+    margin-top: 10px; /* 0.625rem */
+    margin-bottom: 14px; /* 0.875rem */
   }
   .procedure-bottom {
-    padding: 1.375rem 0px;
+    padding: 19px 0px; /* 1.188rem */
+  }
+  .procedure-arrow {
+    display: none;
   }
 }
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .procedure-arrow {
+    margin-top: 25% !important;
+  }
 }
 
 /* Min Mobile */
@@ -229,6 +248,9 @@
 @media only screen and (max-width: 739px) {
   .procedure-title br {
     display: block;
+  }
+  .procedure-decoration {
+    top: 85px;
   }
 }
 

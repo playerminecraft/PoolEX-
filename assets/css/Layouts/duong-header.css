@@ -476,7 +476,7 @@
     padding: 0px;
   }
   .header-search__top .input-group {
-    height: max(42px, min(10vw, 100px));
+    padding: 1%;
   }
   .header-toggle {
     font-family: PoppinsVN;

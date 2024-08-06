@@ -5,8 +5,8 @@ section.talk {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  padding-top: 6rem;
-  padding-bottom: 7rem;
+  padding-top: 96px; /* 6rem */
+  padding-bottom: 112px; /* 7rem */
 }
 
 .talk-wrapper {
@@ -20,7 +20,7 @@ section.talk {
   text-align: center;
   font-weight: 400;
   color: var(--white-text-color);
-  margin-bottom: 1.875rem;
+  margin-bottom: 30px; /* 1.875rem */
 }
 .talk-title {
   font-size: max(22px, min(2vw, 32px));
@@ -37,8 +37,7 @@ section.talk {
   font-weight: 400;
   line-height: max(18px, min(2vw, 36px));
   text-align: center;
-
-  padding-top: 1.7rem;
+  padding-top: 27px; /* 1.7rem */
   position: relative;
 }
 
@@ -149,6 +148,8 @@ section.talk {
   }
   .talk {
     background-position: right !important;
+    padding-top: 48px !important; /* 3rem */
+    padding-bottom: 80px !important; /* 5rem */
   }
   .talk-paragraph::before {
     display: none;

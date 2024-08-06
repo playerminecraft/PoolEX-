@@ -1,6 +1,8 @@
 .solution {
   position: relative;
   overflow: hidden;
+  padding-top: max(22px, min(5vw, 70px)); /* 6.563rem * 16px */
+  padding-bottom: 145px; /* 9.063rem * 16px */
 }
 .solution-header {
   display: flex;
@@ -9,10 +11,7 @@
   text-align: center;
   font-weight: 400;
 }
-.solution-wrapper {
-  padding-top: max(60px, min(2vw, 105px));
-  padding-bottom: max(30px, min(2vw, 143px));
-}
+
 .solution-title {
   font-size: max(22px, min(2vw, 32px));
   line-height: max(26.4px, min(2vw, 38.4px));
@@ -27,15 +26,14 @@
 .solution-desc {
   font-size: max(14px, min(2vw, 18px));
   line-height: max(20px, min(2vw, 30px));
-  margin-bottom: max(20px, min(2vw, 55px));
-  margin-top: max(30px, min(2vw, 60px));
-  /* padding: 0px 150px; */
+  margin-bottom: 55px;
+  margin-top: 60px;
   color: var(--deep-blue-color);
 }
 
 .solution-card .card-header {
-  height: max(4.375rem, min(2vw, 6.75rem));
-  font-size: max(14px, min(2vw, 24px));
+  height: max(70px, min(2vw, 108px)); /* 4.375rem * 16px */
+  font-size: max(13px, min(1vw, 24px));
   font-weight: bold;
   line-height: max(20px, min(2vw, 36px));
   text-align: center;
@@ -53,12 +51,12 @@
   align-items: center;
   padding-top: 45px;
   padding-bottom: 35px;
-  height: max(5.313rem, min(2vw, 9.25rem));
+  height: max(85px, min(2vw, 148px)); /* 5.313rem * 16px */
 }
 
 .solution-card .card-text {
   color: var(--slate-gray-color);
-  padding: 0 30px;
+  padding: 0px 16px;
   font-size: max(11px, min(2vw, 20px));
   font-weight: 400;
   line-height: max(18px, min(2vw, 24px));
@@ -104,7 +102,6 @@
   font-size: max(16px, min(2vw, 28px));
   line-height: max(19.2px, min(2vw, 33.6px));
   border-radius: 12px;
-  /* padding: 12px 24px; */
   border: none;
   color: var(--white-text-color);
 }
@@ -121,9 +118,8 @@
 .solution-detail {
   width: 100%;
   display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  padding-bottom: 20%;
+  gap: 48px; /* 3rem * 16px */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .solution-card .card-footer {
@@ -136,11 +132,20 @@
   position: absolute;
   top: 5%;
   left: 0;
+  width: 50%;
 }
 .solution__decoration-bottom {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.solution__decoration-top img {
+  width: 100%;
+}
+
+.solution__decoration-bottom img {
+  width: 100%;
 }
 
 /* PC Alway  */
@@ -197,10 +202,20 @@
 
 /* Mobile & tablet */
 @media only screen and (max-width: 1023px) {
+  .solution__decoration-bottom {
+    display: none;
+  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .solution-detail {
+    gap: 20px;
+  }
+
+  .solution-card .card-text {
+    padding: 0px 0px;
+  }
 }
 
 /* Min Mobile */
@@ -218,6 +233,39 @@
   .solution-card .card-title {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .solution {
+    padding-top: 41px;
+    padding-bottom: 33px;
+  }
+
+  .card-footer__btn {
+    border-radius: 8px;
+    width: 112px;
+    height: 33px;
+  }
+  .solution-card .card-header {
+    padding: 0 0px;
+  }
+  .solution-card__btn {
+    border-radius: 6px;
+    padding: 0px 0px;
+  }
+  .solution-detail {
+    padding: 0 10%;
+  }
+
+  .solution-card__btn {
+    width: 120px;
+    height: 25.92px;
+    border-radius: 6px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .solution__decoration-top {
+    top: 2%;
+    width: 81%;
   }
 }
 

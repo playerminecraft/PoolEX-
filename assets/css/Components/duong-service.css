@@ -1,11 +1,10 @@
 .services {
   position: relative;
   overflow: hidden;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 96px; /* 6rem * 16px = 96px */
+  padding-bottom: 96px; /* 6rem * 16px = 96px */
 }
-.services-wrapper {
-}
+
 .service-header {
   display: flex;
   flex-direction: column;
@@ -39,8 +38,8 @@
 .service-title {
   font-size: max(22px, min(2vw, 32px));
   line-height: max(26.4px, min(2vw, 38.4px));
-  margin-top: 4.688rem;
-  margin-bottom: 3.125rem;
+  margin-top: 75px; /* 4.688rem * 16px = 75px */
+  margin-bottom: 50px; /* 3.125rem * 16px = 50px */
   color: var(--steel-blue-color);
   font-weight: bold;
 }
@@ -52,7 +51,7 @@
 
 .services-card .card-body {
   text-align: center;
-  margin-top: max(15px, min(2vw, 34px));
+  margin-top: 20px; /* 1.25rem * 16px = 20px */
   padding: 16px 0px;
   display: flex;
   align-items: center;
@@ -190,10 +189,21 @@
     padding: 0;
     margin: 0;
   }
+  .services-card .card-body {
+    margin-top: 0rem;
+  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .services {
+    padding-top: 64px; /* 4rem * 16px = 64px */
+    padding-bottom: 48px; /* 3rem * 16px = 48px */
+  }
+  .service-title {
+    margin-top: 43px; /* 2.688rem * 16px = 43px */
+    margin-bottom: 34px; /* 2.125rem * 16px = 34px */
+  }
 }
 
 /* Min Mobile */
@@ -203,15 +213,15 @@
 /* Mobile */
 @media only screen and (max-width: 739px) {
   .services {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 48px; /* 3rem * 16px = 48px */
+    padding-bottom: 32px; /* 2rem * 16px = 32px */
   }
   .services-card br {
     display: block;
   }
   .service-title {
-    margin-top: 1.688rem;
-    margin-bottom: 1.125rem;
+    margin-top: 27px; /* 1.688rem * 16px = 27px */
+    margin-bottom: 18px; /* 1.125rem * 16px = 18px */
   }
 }
 

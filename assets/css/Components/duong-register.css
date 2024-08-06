@@ -1,9 +1,12 @@
+.register {
+  padding-top: 35px;
+}
+
 .register-wrapper {
   width: 100%;
   display: grid;
-  gap: 1rem;
+  gap: 16px; /* 1rem = 16px */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding-top: 35px;
 }
 .register-map img {
   width: 100%;
@@ -12,54 +15,54 @@
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr);
   display: grid;
-  grid-row-gap: max(16px, min(2vw, 22px));
+  grid-row-gap: 22px; /* 1.375rem = 22px */
 }
 .card-footer__button {
   display: flex;
   justify-content: end;
 }
 .register-title {
-  font-size: max(22px, min(2vw, 32px));
-  line-height: max(26.4px, min(2vw, 38.4px));
+  font-size: max(22px, min(32px, 2vw));
+  line-height: max(26.4px, min(38.4px, 2vw));
   text-align: center;
   color: var(--steel-blue-color);
   font-weight: bold;
 }
 .register-desc {
   color: var(--slate-gray-color);
-  font-size: max(14px, min(2vw, 18px));
-  line-height: max(20px, min(2vw, 30px));
+  font-size: max(14px, min(18px, 2vw));
+  line-height: max(20px, min(30px, 2vw));
   text-align: center;
 }
 .register-map {
-  margin-top: max(20px, min(2vw, 60px));
+  margin-top: 60px; /* 3.75rem = 60px */
   padding-left: 15%;
 }
 
 .register-input.input-group {
-  height: max(3rem, min(2vw, 3.5rem));
+  height: max(48px, min(56px, 2vw)); /* 3rem = 48px, 3.5rem = 56px */
   border-radius: 8px;
 }
 .card-header__title {
   color: var(--deep-blue-color);
-  font-size: max(22px, min(2vw, 24px));
+  font-size: max(22px, min(24px, 2vw));
   font-weight: bold;
-  line-height: max(26.4px, min(2vw, 28.8px));
+  line-height: max(26.4px, min(28.8px, 2vw));
   text-align: left;
 }
 .card-header__sub {
   color: var(--slate-gray-color);
-  font-size: max(14px, min(2vw, 16px));
+  font-size: max(14px, min(16px, 2vw));
   font-weight: 400;
-  line-height: max(16.8px, min(2vw, 19.2px));
+  line-height: max(16.8px, min(19.2px, 2vw));
   text-align: left;
   margin-top: 10px;
 }
 .register-card .card-footer__title {
   color: var(--deep-blue-color);
-  font-size: max(16px, min(2vw, 24px));
+  font-size: max(16px, min(24px, 2vw));
   font-weight: 400;
-  line-height: max(19.2px, min(2vw, 28.8px));
+  line-height: max(19.2px, min(28.8px, 2vw));
   text-align: left;
   margin-bottom: 20px;
 }
@@ -88,26 +91,26 @@
   border-radius: 28px;
   /* padding: 15px 30px; */
   color: var(--white-text-color);
-  font-size: max(16px, min(2vw, 24px));
+  font-size: max(16px, min(24px, 2vw));
   font-weight: 400;
-  line-height: max(19.2px, min(2vw, 28.8px));
+  line-height: max(19.2px, min(28.8px, 2vw));
   text-align: left;
 }
 
 .card-footer__input {
-  height: max(4.125rem, min(2vw, 6.188rem));
+  height: max(66px, min(99px, 2vw)); /* 4.125rem = 66px, 6.188rem = 99px */
   border-radius: 8px;
 }
 
 .card-footer__button {
-  margin-top: max(25px, min(2vw, 50px));
-  margin-bottom: max(25px, min(2vw, 52px));
+  margin-top: 50px; /* 3.125rem = 50px */
+  margin-bottom: 50px; /* 3.125rem = 50px */
 }
 .register-input input.form-control {
   color: var(--slate-gray-color);
-  font-size: max(16px, min(2vw, 18px));
+  font-size: max(16px, min(18px, 2vw));
   font-weight: 400;
-  line-height: max(16.8px, min(2vw, 21.6px));
+  line-height: max(16.8px, min(21.6px, 2vw));
   text-align: left;
   background: #fffefe;
 }
@@ -187,6 +190,13 @@
 
 /* Mobile & tablet */
 @media only screen and (max-width: 1023px) {
+  .card-footer__button {
+    margin-top: 18px; /* 1.125rem = 18px */
+    margin-bottom: 18px; /* 1.125rem = 18px */
+  }
+  .register-map {
+    margin-top: 14px; /* 0.85rem = 14px */
+  }
 }
 
 /* Tablet */
@@ -207,7 +217,7 @@
     padding-right: 0px;
   }
   .register-wrapper {
-    gap: 36px;
+    gap: 36px; /* 2.25rem = 36px */
   }
 
   .register-phone {
@@ -229,10 +239,13 @@
   }
   .register-account .card-body {
     grid-template-rows: repeat(4, 1fr);
-    gap: max(16px, min(2vw, 22px));
+    gap: 22px; /* 1.375rem = 22px */
   }
 }
 
 /* Phone Small */
 @media only screen and (max-width: 395px) {
+  .register-account .card-body {
+    gap: 14px; /* 0.85rem = 14px */
+  }
 }

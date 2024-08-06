@@ -5,14 +5,14 @@
   object-fit: contain;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  position: relative;
+  padding-top: 160px; /* 10rem = 160px */
+  padding-bottom: 160px; /* 10rem = 160px */
 }
 
 .intro-wrapper {
   height: 100%;
 }
+
 .intro-sub {
   font-size: max(16px, min(2vw, 24px));
   line-height: 28.8px;
@@ -27,6 +27,7 @@
   margin-top: 15px;
   font-weight: 600;
 }
+
 .intro-desc {
   font-size: 24px;
   line-height: 28.8px;
@@ -42,7 +43,7 @@
 }
 
 .intro-header {
-  margin-bottom: 4.063rem;
+  margin-bottom: 65px; /* 4.063rem = 65px */
 }
 
 .intro .container {
@@ -149,6 +150,7 @@
   padding-right: 45px;
   width: fit-content;
 }
+
 .intro-mail,
 .intro-location,
 .intro-note {
@@ -225,7 +227,7 @@
     display: none;
   }
   .intro-header {
-    margin-bottom: 1.063rem;
+    margin-bottom: 17px; /* 1.063rem = 17px */
   }
 }
 
@@ -240,12 +242,12 @@
 /* Mobile */
 @media only screen and (max-width: 739px) {
   .intro {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    padding-top: 112px; /* 7rem = 112px */
+    padding-bottom: 112px; /* 7rem = 112px */
   }
   .header-brand__img {
-    padding-top: 7%;
-    width: 20%;
+    padding-top: 7%; /* No change needed for percentage-based values */
+    width: 20%; /* No change needed for percentage-based values */
   }
 }
 

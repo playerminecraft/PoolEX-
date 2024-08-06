@@ -1,8 +1,8 @@
 .sell-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: max(16px, min(1vw, 32px));
-  line-height: max(19.2px, min(1vw, 38.4px));
+  font-size: 16px;
+  line-height: 19.2px;
   /* padding: 16px 28.5px; */
 }
 
@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4.375rem 0px;
+  padding: 70px 0px;
 }
 
 .sell-top {
@@ -24,7 +24,6 @@
 .sell-img {
   position: relative;
   padding-top: 100%;
-
   margin: auto;
 }
 
@@ -76,35 +75,35 @@
   align-items: center;
   text-align: center;
   font-weight: 400;
-  margin-bottom: 4.5rem;
+  margin-bottom: 72px;
 }
 .sell-title {
-  font-size: max(22px, min(2vw, 32px));
-  line-height: max(26.4px, min(2vw, 38.4px));
+  font-size: 22px;
+  line-height: 26.4px;
   color: var(--steel-blue-color);
   font-weight: bold;
 }
 
 .sell-card .card-title {
-  font-size: max(14px, min(2vw, 16px));
+  font-size: 14px;
   font-weight: 400;
-  line-height: max(12px, min(2vw, 19.2px));
+  line-height: 12px;
   text-align: left;
   color: var(--deep-blue-color);
   font-weight: bold;
 }
 
 .sell-card .card-text {
-  font-size: max(14px, min(2vw, 16px));
+  font-size: 14px;
   font-weight: 400;
-  line-height: max(12px, min(2vw, 19.2px));
+  line-height: 12px;
   text-align: left;
   color: var(--deep-blue-color);
 }
 .sell-price__after {
-  font-size: max(18px, min(2vw, 24px));
+  font-size: 18px;
   font-weight: 400;
-  line-height: max(21.6px, min(2vw, 24px));
+  line-height: 21.6px;
   text-align: left;
   font-weight: bold;
   color: var(--deep-blue-color);
@@ -126,10 +125,10 @@
   display: grid;
 }
 button.sell-add__btn.btn svg {
-  width: 1.313rem;
+  width: 21px;
 }
 .sell-card .card-body {
-  padding: 1rem 0px;
+  padding: 16px 0px;
 }
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
@@ -189,13 +188,11 @@ button.sell-add__btn.btn svg {
     grid-template-columns: repeat(2, 1fr);
   }
   .sell-header {
-    margin-bottom: 1.5rem;
+    margin-bottom: 24px;
   }
-  .sell-bottom {
-    padding: 1.375rem 0px;
-  }
+
   button.sell-add__btn.btn svg {
-    width: 0.875rem;
+    width: 14px;
   }
 }
 
@@ -209,6 +206,9 @@ button.sell-add__btn.btn svg {
 
 /* Mobile */
 @media only screen and (max-width: 739px) {
+  .sell-bottom {
+    padding: 24px 0px;
+  }
 }
 
 /* Phone Small */

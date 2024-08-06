@@ -1,3 +1,8 @@
+.new {
+  position: relative;
+  padding-top: max(22px, min(11vw, 175px));
+  padding-bottom: 55px;
+}
 .new-header {
   display: flex;
   flex-direction: column;
@@ -25,20 +30,13 @@
   width: fit-content;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
-
-.new-meta__date span {
-  margin-left: 10px;
-}
-
-.new-meta__comment span {
-  margin-left: 10px;
-}
-
 .new-meta__comment {
   width: fit-content;
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 .new-meta__comment svg,
 .new-meta__date svg {
@@ -75,10 +73,6 @@
 .new-content {
   margin-top: max(40px, min(2vw, 45px));
 }
-.new-wrapper {
-  padding-top: max(60px, min(2vw, 155px));
-  padding-bottom: max(10px, min(2vw, 55px));
-}
 
 .new-card.card {
   border: none;
@@ -101,13 +95,25 @@
 }
 
 .new-next {
-  right: 2px;
-  top: 85px;
+  right: 20px;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.5;
+  transform: translateY(-50%);
 }
 
 .new-prev {
-  left: 2px;
-  top: 85px;
+  left: 20px;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.5;
+  transform: translateY(-50%);
 }
 
 .new-next::after {
@@ -120,6 +126,20 @@
   color: var(--goldenrod-color);
 }
 
+.new-next.swiper-button-disabled,
+.new-prev.swiper-button-disabled {
+  display: none;
+}
+
+.new-decoration {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 42%;
+}
+.new-decoration img {
+  width: 100%;
+}
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
 }
@@ -189,6 +209,13 @@
 
 /* Mobile */
 @media only screen and (max-width: 739px) {
+  .new {
+    padding-top: 60px;
+    padding-bottom: 15px;
+  }
+  .new-decoration {
+    width: 92%;
+  }
 }
 
 /* Phone Small */

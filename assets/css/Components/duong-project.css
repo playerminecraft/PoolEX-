@@ -16,8 +16,8 @@
 .project-desc {
   font-size: max(14px, min(2vw, 18px));
   line-height: max(20px, min(2vw, 30px));
-  margin-top: max(20px, min(2vw, 30px));
-  margin-bottom: max(10px, min(2vw, 55px));
+  margin-top: 30px; /* 1.875rem * 16px = 30px */
+  margin-bottom: 55px; /* 3.438rem * 16px = 55px */
   /* padding: 0px 150px; */
   color: var(--deep-blue-color);
 }
@@ -26,7 +26,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4.375rem 0px;
+  padding: 70px 0px; /* 4.375rem * 16px = 70px */
 }
 
 .project-btn {
@@ -45,7 +45,7 @@
   display: none;
 }
 
-/* PC Alway  */
+/* PC Always  */
 @media only screen and (max-width: 1920px) {
 }
 
@@ -89,7 +89,7 @@
 @media only screen and (min-width: 1023px) and (max-width: 1241px) {
 }
 
-/* PC LOWER  min-1023px */
+/* PC LOWER min-1023px */
 @media only screen and (min-width: 1023px) and (max-width: 1240px) {
 }
 
@@ -104,13 +104,13 @@
     margin: 0;
     max-width: none;
   }
-  .project-bottom {
-    padding: 1.375rem 0px;
-  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .project-bottom {
+    padding: 38px 0px; /* 2.375rem * 16px = 38px */
+  }
 }
 
 /* Min Mobile */
@@ -121,6 +121,13 @@
 @media only screen and (max-width: 739px) {
   .project-title br {
     display: block;
+  }
+  .project-bottom {
+    padding: 26px 0px; /* 1.625rem * 16px = 26px */
+  }
+  .project-desc {
+    margin-top: 30px; /* 1.875rem * 16px = 30px */
+    margin-bottom: 39px; /* 2.438rem * 16px = 39px */
   }
 }
 
