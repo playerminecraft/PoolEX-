@@ -32,9 +32,10 @@
 .project-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: max(16px, min(1vw, 32px));
-  line-height: max(19.2px, min(1vw, 38.4px));
-  /* padding: 16px 28.5px; */
+  font-size: max(16px, min(2vw, 32px));
+  line-height: max(19.2px, min(2vw, 38.4px));
+  padding: 18px 30px;
+  border-radius: 12px;
 }
 
 .project-img img {
@@ -103,6 +104,10 @@
     padding: 0;
     margin: 0;
     max-width: none;
+  }
+  .project-btn {
+    padding: 7px 11px;
+    border-radius: 8px;
   }
 }
 

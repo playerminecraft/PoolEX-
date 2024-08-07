@@ -32,7 +32,7 @@
 }
 
 .solution-card .card-header {
-  height: max(70px, min(2vw, 108px)); /* 4.375rem * 16px */
+  height: max(70px, min(6vw, 108px)); /* 4.375rem * 16px */
   font-size: max(13px, min(1vw, 24px));
   font-weight: bold;
   line-height: max(20px, min(2vw, 36px));
@@ -51,7 +51,7 @@
   align-items: center;
   padding-top: 45px;
   padding-bottom: 35px;
-  height: max(85px, min(2vw, 148px)); /* 5.313rem * 16px */
+  height: max(85px, min(6vw, 148px)); /* 5.313rem * 16px */
 }
 
 .solution-card .card-text {
@@ -73,7 +73,7 @@
   line-height: max(16.8px, min(2vw, 28.8px));
   text-align: center;
   border-radius: 12px;
-  padding: 12px 18px;
+  padding: 11px 22px;
 }
 
 .solution-card .card-title {
@@ -95,15 +95,21 @@
 }
 .card-footer__btn {
   position: absolute;
-  bottom: -17px;
+  bottom: -28px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--goldenrod-color);
   font-size: max(16px, min(2vw, 28px));
   line-height: max(19.2px, min(2vw, 33.6px));
-  border-radius: 12px;
+  border-radius: max(8px, min(1vw, 12px));
   border: none;
   color: var(--white-text-color);
+  width: max(112px, min(12vw, 230px));
+  height: max(33px, min(5vw, 72px));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
 }
 
 .solution-service {
@@ -123,7 +129,7 @@
 }
 
 .solution-card .card-footer {
-  padding-bottom: max(30px, min(2vw, 106px));
+  padding-bottom: max(30px, min(4rem, 106px));
   background: #154a8126;
   border: none;
 }
@@ -205,6 +211,9 @@
   .solution__decoration-bottom {
     display: none;
   }
+  .card-footer__btn {
+    bottom: -15px;
+  }
 }
 
 /* Tablet */
@@ -239,11 +248,6 @@
     padding-bottom: 33px;
   }
 
-  .card-footer__btn {
-    border-radius: 8px;
-    width: 112px;
-    height: 33px;
-  }
   .solution-card .card-header {
     padding: 0 0px;
   }

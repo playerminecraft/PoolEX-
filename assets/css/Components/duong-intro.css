@@ -64,6 +64,8 @@
   color: var(--white-text-color);
   font-size: max(18px, min(3vw, 32px));
   line-height: max(21.6px, min(3vw, 38.4px));
+  padding: 18px 40px;
+  border-radius: 12px;
 }
 
 .intro-btn:hover {
@@ -229,6 +231,10 @@
   .intro-header {
     margin-bottom: 17px; /* 1.063rem = 17px */
   }
+  .intro-btn {
+    padding: 9px 15px;
+    border-radius: 8px;
+  }
 }
 
 /* Tablet */
@@ -242,8 +248,8 @@
 /* Mobile */
 @media only screen and (max-width: 739px) {
   .intro {
-    padding-top: 112px; /* 7rem = 112px */
-    padding-bottom: 112px; /* 7rem = 112px */
+    padding-top: 105px;
+    padding-bottom: 80px;
   }
   .header-brand__img {
     padding-top: 7%; /* No change needed for percentage-based values */

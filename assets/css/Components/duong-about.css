@@ -79,9 +79,10 @@ section.about {
 .about-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: max(16px, min(1vw, 32px));
-  line-height: max(19.2px, min(1vw, 38.4px));
-  /* padding: 16px 28.5px; */
+  font-size: max(16px, min(2vw, 32px));
+  line-height: max(19.2px, min(2vw, 38.4px));
+  padding: 15px 32px;
+  border-radius: 12px;
 }
 
 .about-bottom {
@@ -182,6 +183,10 @@ section.about {
 
   .about-advantage {
     margin-left: 15px;
+  }
+  .about-btn {
+    padding: 7px 20px;
+    border-radius: 8px;
   }
 }
 

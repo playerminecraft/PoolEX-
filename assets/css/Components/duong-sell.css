@@ -1,9 +1,10 @@
 .sell-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: 16px;
-  line-height: 19.2px;
-  /* padding: 16px 28.5px; */
+  font-size: max(16px, min(2vw, 32px));
+  line-height: max(19.2px, min(2vw, 38.4px));
+  padding: 15px 57px;
+  border-radius: 12px;
 }
 
 .sell-bottom {
@@ -193,6 +194,10 @@ button.sell-add__btn.btn svg {
 
   button.sell-add__btn.btn svg {
     width: 14px;
+  }
+  .sell-btn {
+    padding: 7px 13px;
+    border-radius: 8px;
   }
 }
 

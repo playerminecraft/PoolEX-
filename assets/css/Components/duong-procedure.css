@@ -1,6 +1,6 @@
 .procedure {
   position: relative;
-  padding-top: max(57.4px, min(7vw, 148px));
+  padding-top: max(25px, min(7vw, 148px));
 }
 .procedure-header {
   display: flex;
@@ -36,9 +36,10 @@
 .procedure-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: max(16px, min(1vw, 32px));
-  line-height: max(19.2px, min(1vw, 38.4px));
-  /* padding: 16px 28.5px; */
+  font-size: max(16px, min(2vw, 32px));
+  line-height: max(19.2px, min(2vw, 38.4px));
+  padding: 12px 72px;
+  border-radius: 12px;
 }
 
 .procedure-img {
@@ -231,6 +232,10 @@
   .procedure-arrow {
     display: none;
   }
+  .procedure-btn {
+    padding: 7px 21px;
+    border-radius: 8px;
+  }
 }
 
 /* Tablet */
@@ -250,7 +255,7 @@
     display: block;
   }
   .procedure-decoration {
-    top: 85px;
+    top: 55px;
   }
 }
 
