@@ -76,6 +76,12 @@
   padding: 11px 22px;
 }
 
+.solution-card__btn:hover {
+  background-color: var(--deep-blue-color);
+  color: var(--white-text-color);
+  opacity: 0.6;
+}
+
 .solution-card .card-title {
   flex-direction: column;
   color: var(--deep-blue-color);
@@ -110,6 +116,12 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
+}
+
+.card-footer__btn:hover {
+  background-color: var(--goldenrod-color);
+  color: var(--white-text-color);
+  opacity: 0.6;
 }
 
 .solution-service {

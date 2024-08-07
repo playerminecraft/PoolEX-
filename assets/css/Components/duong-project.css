@@ -38,6 +38,12 @@
   border-radius: 12px;
 }
 
+.project-btn:hover {
+  background-color: var(--goldenrod-color);
+  color: var(--white-text-color);
+  opacity: 0.6;
+}
+
 .project-img img {
   width: 100%;
 }

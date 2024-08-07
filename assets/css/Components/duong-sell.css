@@ -7,6 +7,12 @@
   border-radius: 12px;
 }
 
+.sell-btn:hover {
+  background-color: var(--goldenrod-color);
+  color: var(--white-text-color);
+  opacity: 0.6;
+}
+
 .sell-bottom {
   display: flex;
   align-items: center;
@@ -65,11 +71,12 @@
 
 .sell-add__btn {
   background: var(--goldenrod-color);
-}
-.sell-add__btn {
   height: 100%;
 }
-
+.sell-add__btn:hover {
+  background-color: goldenrod;
+  opacity: 0.7;
+}
 .sell-header {
   display: flex;
   flex-direction: column;

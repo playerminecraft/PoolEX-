@@ -42,6 +42,12 @@
   border-radius: 12px;
 }
 
+.procedure-btn:hover {
+  background-color: var(--goldenrod-color);
+  color: var(--white-text-color);
+  opacity: 0.6;
+}
+
 .procedure-img {
   position: relative;
   height: 96px; /* 6rem */

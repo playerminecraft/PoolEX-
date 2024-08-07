@@ -85,6 +85,12 @@ section.about {
   border-radius: 12px;
 }
 
+.about-bottom :hover {
+  background-color: var(--goldenrod-color);
+  color: var(--white-text-color);
+  opacity: 0.6;
+}
+
 .about-bottom {
   display: flex;
   align-items: center;
