@@ -80,6 +80,7 @@
 
 .intro-pagination {
   bottom: 30px !important;
+  z-index: 1;
 }
 
 .intro-pagination span.swiper-pagination-bullet {
