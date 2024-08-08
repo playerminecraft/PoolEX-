@@ -76,6 +76,8 @@
 
 .new-card.card {
   border: none;
+  position: relative;
+  cursor: pointer;
 }
 
 .new-card .card-img {

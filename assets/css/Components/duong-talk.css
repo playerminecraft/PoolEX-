@@ -60,6 +60,7 @@ section.talk {
   opacity: 0.4;
   top: 70%;
   right: -40px;
+  z-index: 1;
 }
 
 .talk-next.swiper-button-next::after {
@@ -70,6 +71,7 @@ section.talk {
   opacity: 0.4;
   top: 70%;
   left: -40px;
+  z-index: 1;
 }
 .talk-prev.swiper-button-prev::after {
   font-size: max(20px, min(2vw, 44px));
