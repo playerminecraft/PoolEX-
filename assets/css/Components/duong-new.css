@@ -82,7 +82,7 @@
 
 .new-card .card-img {
   position: relative;
-  padding-top: 65%;
+  padding-top: 70%;
   width: 100%;
   margin: auto;
 }
@@ -94,6 +94,10 @@
   top: 0;
   left: 0;
   object-fit: contain;
+}
+
+.new-card .card-body {
+  padding: 16px 0;
 }
 
 .new-next {
@@ -120,12 +124,12 @@
 
 .new-next::after {
   font-size: 19px;
-  color: var(--goldenrod-color);
+  color: var(--deep-blue-color);
 }
 
 .new-prev::after {
   font-size: 19px;
-  color: var(--goldenrod-color);
+  color: var(--deep-blue-color);
 }
 
 .new-next.swiper-button-disabled,
@@ -217,6 +221,14 @@
   }
   .new-decoration {
     width: 92%;
+  }
+  .new-next {
+    right: 6px;
+    top: 40%;
+  }
+  .new-prev {
+    left: 6px;
+    top: 40%;
   }
 }
 

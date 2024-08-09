@@ -7,18 +7,17 @@
 }
 
 .project-title {
-  font-size: max(22px, min(2vw, 32px));
+  font-size: var(--section-title-font-size);
   color: var(--steel-blue-color);
-  line-height: max(26.4px, min(2vw, 38.4px));
+  line-height: var(--section-title-line-height);
   font-weight: bold;
 }
 
 .project-desc {
-  font-size: max(14px, min(2vw, 18px));
-  line-height: max(20px, min(2vw, 30px));
-  margin-top: 30px; /* 1.875rem * 16px = 30px */
-  margin-bottom: 55px; /* 3.438rem * 16px = 55px */
-  /* padding: 0px 150px; */
+  font-size: var(--section-desc-font-size);
+  line-height: var(--section-desc-line-height);
+  margin-top: 30px;
+  margin-bottom: 55px;
   color: var(--deep-blue-color);
 }
 

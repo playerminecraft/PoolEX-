@@ -86,8 +86,8 @@
   margin-bottom: 72px;
 }
 .sell-title {
-  font-size: 22px;
-  line-height: 26.4px;
+  font-size: var(--section-title-font-size);
+  line-height: var(--section-title-line-height);
   color: var(--steel-blue-color);
   font-weight: bold;
 }
@@ -138,6 +138,11 @@ button.sell-add__btn.btn svg {
 .sell-card .card-body {
   padding: 16px 0px;
 }
+/* Sell Bottom */
+.sell-btn {
+  text-transform: uppercase;
+}
+
 /* PC Alway  */
 @media only screen and (max-width: 1920px) {
 }

@@ -11,16 +11,16 @@
 }
 
 .procedure-title {
-  font-size: max(22px, min(2vw, 32px));
+  font-size: var(--section-title-font-size);
   color: var(--steel-blue-color);
-  line-height: max(26.4px, min(2vw, 38.4px));
+  line-height: var(--section-title-line-height);
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .procedure-desc {
-  font-size: max(14px, min(2vw, 18px));
-  line-height: max(20px, min(2vw, 30px));
+  font-size: var(--section-desc-font-size);
+  line-height: var(--section-desc-line-height);
   margin-top: 30px; /* 1.875rem */
   margin-bottom: 55px; /* 3.438rem */
   color: var(--deep-blue-color);
@@ -108,8 +108,8 @@
   margin-bottom: 30px; /* 1.875rem */
 }
 .circleg {
-  width: max(20px, min(2vw, 36px));
-  height: max(20px, min(2vw, 36px));
+  width: max(20px, min(3vw, 36px));
+  height: max(20px, min(3vw, 36px));
   border-radius: 50%;
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);

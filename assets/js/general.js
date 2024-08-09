@@ -38,24 +38,35 @@ function handleShowSearch() {
   }
 }
 
-// function handleLoadMore() {
-//   const btnMoreShow = document.querySelector(".height-zoom");
-//   const btnMoreHide = document.querySelector(".height-small");
+// Start Header Scroll Change
+$(function () {
+  $(window).on("scroll", function () {
+    if ($(window).scrollTop() > 50) {
+      $(".header-bottom").addClass("active");
+    } else {
+      $(".header-bottom").removeClass("active");
+    }
+  });
+});
+// End Header Scroll Change
 
-//   btnMoreShow.addEventListener("click", () => {
-//     const parentMore = btnMoreShow.closest(".load-btn");
-
-//     parentMore.previousElementSibling.classList.remove("load-more");
-//     parentMore.classList.add("active");
-//   });
-
-//   btnMoreHide.addEventListener("click", () => {
-//     const parentMore = btnMoreHide.closest(".load-btn");
-
-//     parentMore.previousElementSibling.classList.add("load-more");
-//     parentMore.classList.remove("active");
-//   });
-// }
+//Start updateText
+$(document).ready(function () {
+  function updateText() {
+    if ($(window).width() <= 768) {
+      $(".header-search__top .form-control").attr("placeholder", "Tìm Kiếm...");
+      $(".sell-btn").text("XEm thêm");
+    } else {
+      $(".header-search__top .form-control").attr("placeholder", "Tìm Kiếm sản phẩm, Danh mục mong muốn....");
+      $(".sell-btn").text("Cửa hàng ");
+    }
+  }
+  updateText();
+  $(window).resize(function () {
+    updateText();
+  });
+});
+//End updateText
 
 (() => {
   handleShowSearch();

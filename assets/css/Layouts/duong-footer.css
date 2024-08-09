@@ -30,7 +30,7 @@
 }
 .footer-help__desc,
 .footer-address__desc {
-  font-size: max(14px, min(2vw, 16px));
+  font-size: max(14px, min(4vw, 16px));
   font-weight: 400;
   line-height: max(20px, min(2vw, 24px));
   text-align: center;
