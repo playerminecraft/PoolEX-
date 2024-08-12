@@ -5,35 +5,31 @@
   object-fit: contain;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 160px; /* 10rem = 160px */
-  padding-bottom: 160px; /* 10rem = 160px */
+  padding-top: 160px;
+  padding-bottom: 160px;
 }
 
 .intro-wrapper {
   height: 100%;
 }
-
 .intro-sub {
-  font-size: max(16px, min(2vw, 24px));
+  font-size: 24px;
   line-height: 28.8px;
   text-align: center;
 }
-
 .intro-title {
-  font-size: max(40px, min(5vw, 96px));
-  line-height: max(48px, min(5vw, 115.2px));
+  font-size: 96px;
+  line-height: 115.2px;
   text-align: center;
   margin-bottom: 10px;
   margin-top: 15px;
   font-weight: 600;
 }
-
 .intro-desc {
   font-size: 24px;
   line-height: 28.8px;
   text-align: center;
 }
-
 .intro-content {
   position: absolute;
   top: 0;
@@ -41,15 +37,13 @@
   height: 100%;
   left: 0;
 }
-
 .intro-header {
-  margin-bottom: 65px; /* 4.063rem = 65px */
+  margin-bottom: 65px;
 }
 
 .intro .container {
   height: 100%;
 }
-
 .intro-item {
   height: 100%;
   display: flex;
@@ -58,31 +52,28 @@
   color: var(--white-text-color);
   position: relative;
 }
-
 .intro-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: max(18px, min(3vw, 32px));
-  line-height: max(21.6px, min(3vw, 38.4px));
-  padding: 18px 40px;
+  font-size: 32px;
+  line-height: 38.4px;
+  padding: 15.82px 28.16px;
   border-radius: 12px;
+  display: grid;
+  place-items: center;
 }
-
 .intro-btn:hover {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
   opacity: 0.9;
 }
-
 .intro-swiper {
   height: 100%;
 }
-
 .intro-pagination {
   bottom: 30px !important;
   z-index: 1;
 }
-
 .intro-pagination span.swiper-pagination-bullet {
   background: url(../../images/intro/intro-page-bullet.png);
   background-position: center;
@@ -91,8 +82,8 @@
   background-repeat: no-repeat;
   width: max(14.31px, min(3vw, 24px));
   height: max(14.31px, min(3vw, 24px));
+  opacity: 1;
 }
-
 .intro-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: url(../../images/intro/intro-page-bullet-actived.png);
   background-position: center;
@@ -102,20 +93,18 @@
   width: max(14.31px, min(3vw, 24px));
   height: max(14.31px, min(3vw, 24px));
 }
-
 .widgets {
-  height: 100%;
+  height: fit-content;
   position: fixed;
-  top: 0;
+  top: 100px;
   right: 0;
   display: flex;
   flex-direction: column;
   align-items: end;
   justify-content: center;
   grid-row-gap: 5px;
-  z-index: 2;
+  z-index: 10;
 }
-
 .widgets-item {
   width: fit-content;
   height: max(34px, min(4.5vw, 72px));
@@ -124,14 +113,12 @@
   background-color: var(--goldenrod-color);
   border-radius: 12px 0px 12px 0px;
 }
-
 .widgets-item__svg {
   position: relative;
   height: max(34px, min(4.5vw, 72px));
   width: max(34px, min(4.5vw, 72px));
   margin: auto;
 }
-
 .widgets-item__svg svg {
   position: absolute;
   width: 50%;
@@ -140,7 +127,6 @@
   left: 27%;
   object-fit: cover;
 }
-
 .intro-note__text,
 .intro-mail__text,
 .intro-location__text {
@@ -153,21 +139,17 @@
   padding-right: 45px;
   width: fit-content;
 }
-
 .intro-mail,
 .intro-location,
 .intro-note {
   position: relative;
 }
-
 .intro-location:hover .intro-location__text {
   display: block;
 }
-
 .intro-mail:hover .intro-mail__text {
   display: block;
 }
-
 .intro-note:hover .intro-note__text {
   display: block;
 }
@@ -206,6 +188,37 @@
 
 /* PC fit small */
 @media only screen and (max-width: 1300px) {
+  .intro {
+    padding-top: 135px;
+    padding-bottom: 95px;
+  }
+
+  .intro-sub {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .intro-title {
+    font-size: 64px;
+    line-height: 76.8px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+  }
+
+  .intro-desc {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .intro-header {
+    margin-bottom: 50px;
+  }
+
+  .intro-btn {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 13px 23px;
+  }
 }
 
 /* PC HD */
@@ -230,16 +243,42 @@
     display: none;
   }
   .intro-header {
-    margin-bottom: 17px; /* 1.063rem = 17px */
-  }
-  .intro-btn {
-    padding: 9px 15px;
-    border-radius: 8px;
+    margin-bottom: 17px;
   }
 }
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .intro {
+    padding-top: 105px;
+    padding-bottom: 80px;
+  }
+
+  .intro-sub {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .intro-title {
+    font-size: 48px;
+    line-height: 57.6px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .intro-desc {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .intro-header {
+    margin-bottom: 45px;
+  }
+
+  .intro-btn {
+    font-size: 24px;
+    padding: 10px 16px;
+  }
 }
 
 /* Min Mobile */
@@ -249,12 +288,41 @@
 /* Mobile */
 @media only screen and (max-width: 739px) {
   .intro {
-    padding-top: 105px;
+    padding-top: 80px;
     padding-bottom: 80px;
   }
+
+  .intro-sub {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  .intro-title {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+
+  .intro-desc {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  .intro-header {
+    margin-bottom: 30px;
+  }
+
+  .intro-btn {
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: left;
+    padding: 8.3px 15px;
+    border-radius: 8px;
+  }
   .header-brand__img {
-    padding-top: 7%; /* No change needed for percentage-based values */
-    width: 20%; /* No change needed for percentage-based values */
+    padding-top: 7%;
+    width: 20%;
   }
 }
 

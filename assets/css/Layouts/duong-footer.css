@@ -24,15 +24,15 @@
 .footer-connect__title,
 .footer-address__title,
 .footer-help__title {
-  font-size: max(22px, min(2vw, 24px));
-  line-height: max(26.4px, min(2vw, 28.8px));
+  font-size: 24px;
+  line-height: 28.8px;
   margin-bottom: 20px;
 }
 .footer-help__desc,
 .footer-address__desc {
-  font-size: max(14px, min(4vw, 16px));
+  font-size: 16px;
   font-weight: 400;
-  line-height: max(20px, min(2vw, 24px));
+  line-height: 24px;
   text-align: center;
   padding: 0 15%;
 }
@@ -68,7 +68,6 @@
 }
 .footer-bottom__text {
   font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
   text-align: center;
   color: var(--white-text-color);
@@ -111,6 +110,33 @@
 
 /* PC fit small */
 @media only screen and (max-width: 1300px) {
+  .footer-top {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+
+  .footer-connect__icon {
+    grid-column-gap: 14px;
+  }
+
+  .footer-connect__title,
+  .footer-address__title,
+  .footer-help__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .footer-help__desc,
+  .footer-address__desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .footer-bottom__text {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 /* PC HD */
@@ -148,6 +174,33 @@
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer-top {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .footer-connect__icon {
+    grid-column-gap: 12px;
+  }
+
+  .footer-connect__title,
+  .footer-address__title,
+  .footer-help__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 12px;
+  }
+
+  .footer-help__desc,
+  .footer-address__desc {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .footer-bottom__text {
+    font-size: 13px;
+    line-height: 18px;
+  }
 }
 
 /* Min Mobile */

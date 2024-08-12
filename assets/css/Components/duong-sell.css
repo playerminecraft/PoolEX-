@@ -1,9 +1,14 @@
+.sell {
+  padding-top: 74px;
+  padding-bottom: 105px;
+}
+
 .sell-btn {
   background-color: var(--goldenrod-color);
   color: var(--white-text-color);
-  font-size: max(16px, min(2vw, 32px));
-  line-height: max(19.2px, min(2vw, 38.4px));
-  padding: 15px 57px;
+  font-size: 32px;
+  line-height: 38.4px;
+  padding: 15.82px 53.33px;
   border-radius: 12px;
 }
 
@@ -17,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 70px 0px;
+  padding-top: 57px;
 }
 
 .sell-top {
@@ -66,13 +71,29 @@
   padding: 0px;
   background: transparent;
   border: none;
-  margin-top: 15px;
+  margin-top: 10px;
+  align-items: end;
 }
 
 .sell-add__btn {
   background: var(--goldenrod-color);
-  height: 100%;
+  position: relative;
+  padding-top: 70%;
+  margin: auto;
+  width: 57px;
+  height: 48px;
 }
+
+.sell-add__btn.btn svg {
+  position: absolute;
+  width: 38.2%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+}
+
 .sell-add__btn:hover {
   background-color: goldenrod;
   opacity: 0.7;
@@ -93,25 +114,29 @@
 }
 
 .sell-card .card-title {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 19.8px;
   text-align: left;
   color: var(--deep-blue-color);
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .sell-card .card-text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 12px;
   text-align: left;
   color: var(--deep-blue-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.8px;
+}
+.sell-price {
+  padding-top: 3px;
 }
 .sell-price__after {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 21.6px;
+  line-height: 28.8px;
   text-align: left;
   font-weight: bold;
   color: var(--deep-blue-color);
@@ -132,9 +157,7 @@
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   display: grid;
 }
-button.sell-add__btn.btn svg {
-  width: 21px;
-}
+
 .sell-card .card-body {
   padding: 16px 0px;
 }
@@ -177,6 +200,57 @@ button.sell-add__btn.btn svg {
 
 /* PC fit small */
 @media only screen and (max-width: 1300px) {
+  .sell {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
+
+  .sell-btn {
+    font-size: 28px;
+    line-height: 34px;
+    padding: 13px 46px;
+  }
+
+  .sell-bottom {
+    padding-top: 40px;
+  }
+
+  .sell-card .card-footer {
+    margin-top: 8px;
+  }
+
+  .sell-header {
+    margin-bottom: 50px;
+  }
+
+  .sell-card .card-title {
+    font-size: 14px;
+    line-height: 17.5px;
+    margin-bottom: 4px;
+  }
+
+  .sell-card .card-text {
+    font-size: 14px;
+    line-height: 17.5px;
+  }
+
+  .sell-price {
+    padding-top: 2px;
+  }
+
+  .sell-price__after {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .sell-price__before {
+    font-size: 12px;
+    line-height: 14.4px;
+  }
+
+  .sell-card .card-body {
+    padding: 12px 0px;
+  }
 }
 
 /* PC HD */
@@ -200,21 +274,61 @@ button.sell-add__btn.btn svg {
   .sell-detail {
     grid-template-columns: repeat(2, 1fr);
   }
-  .sell-header {
-    margin-bottom: 24px;
-  }
-
-  button.sell-add__btn.btn svg {
-    width: 14px;
-  }
-  .sell-btn {
-    padding: 7px 13px;
-    border-radius: 8px;
-  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .sell {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .sell-btn {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 10px 40px;
+  }
+
+  .sell-bottom {
+    padding-top: 30px;
+  }
+
+  .sell-card .card-footer {
+    margin-top: 6px;
+  }
+
+  .sell-header {
+    margin-bottom: 40px;
+  }
+
+  .sell-card .card-title {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 3px;
+  }
+
+  .sell-card .card-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .sell-price {
+    padding-top: 2px;
+  }
+
+  .sell-price__after {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+
+  .sell-price__before {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .sell-card .card-body {
+    padding: 10px 0px;
+  }
 }
 
 /* Min Mobile */
@@ -223,8 +337,54 @@ button.sell-add__btn.btn svg {
 
 /* Mobile */
 @media only screen and (max-width: 739px) {
+  .sell {
+    padding-top: 7px;
+    padding-bottom: 24px;
+  }
   .sell-bottom {
-    padding: 24px 0px;
+    padding-top: 24px;
+  }
+  .sell-add__btn {
+    width: 34px;
+    height: 34px;
+  }
+  .sell-card .card-title {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .sell-card .card-text {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .sell-price__before {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .sell-price__after {
+    font-size: 18px;
+    line-height: 21.6px;
+  }
+  .sell-header {
+    margin-bottom: 17px;
+  }
+
+  button.sell-add__btn.btn svg {
+    width: 14px;
+  }
+  .sell-btn {
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: left;
+    padding: 8.3px 15px;
+    border-radius: 8px;
+  }
+  .sell-title {
+    font-size: 22px;
+    line-height: 26.4px;
+  }
+  .sell-desc {
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 

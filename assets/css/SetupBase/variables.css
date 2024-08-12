@@ -44,10 +44,10 @@
 /* ========================= General ========================= */
 :root {
   --font-main: "DVN-Poppins";
-  --section-title-font-size: max(22px, min(2vw, 32px));
-  --section-desc-font-size: max(14px, min(2vw, 18px));
-  --section-title-line-height: max(26.4px, min(2vw, 38.4px));
-  --section-desc-line-height: max(20px, min(2vw, 30px));
+  --section-title-font-size: 32px;
+  --section-desc-font-size: 18px;
+  --section-title-line-height: 38.4px;
+  --section-desc-line-height: 30px;
   /*  ======================== Color Main ======================== */
   --goldenrod-color: #f0b529;
   --light-steel-blue: #b6c7df;

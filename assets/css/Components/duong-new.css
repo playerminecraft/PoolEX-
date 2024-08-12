@@ -1,7 +1,7 @@
 .new {
   position: relative;
-  padding-top: max(22px, min(11vw, 175px));
-  padding-bottom: 55px;
+  padding-top: 160px;
+  padding-bottom: 64px;
 }
 .new-header {
   display: flex;
@@ -11,18 +11,17 @@
   font-weight: 400;
 }
 .new-title {
-  font-size: max(22px, min(2vw, 32px));
-  line-height: max(26.4px, min(2vw, 38.4px));
+  font-size: 32px;
+  line-height: 38.4px;
   color: var(--deep-blue-color);
   font-weight: bold;
 }
 
 .new-desc {
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
   margin-top: 20px;
-  color: var(--deep-blue-color);
+  color: var(--slate-gray-color);
   display: none;
 }
 
@@ -40,38 +39,38 @@
 }
 .new-meta__comment svg,
 .new-meta__date svg {
-  width: max(14px, min(2vw, 24px));
-  height: max(14px, min(2vw, 24px));
+  width: 24px;
+  height: 24px;
 }
 
 .new-meta {
   display: flex;
   justify-content: space-between;
-  margin-bottom: max(10px, min(2vw, 20px));
+  margin-bottom: 20px;
   flex-wrap: wrap;
   color: var(--deep-blue-color);
-  font-size: max(10px, min(2vw, 16px));
+  font-size: 16px;
   font-weight: 400;
-  line-height: max(12px, min(2vw, 19.2px));
+  line-height: 19.2px;
   text-align: left;
 }
 
 .new-card .card-text {
   color: var(--deep-blue-color);
-  font-size: max(12px, min(2vw, 22px));
-  line-height: max(18px, min(2vw, 32px));
+  font-size: 22px;
+  line-height: 32px;
   text-align: left;
   font-weight: bold;
   display: -webkit-box;
   -webkit-line-clamp: 3;
-  line-clamp: 3; /* Số dòng tối đa */
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .new-content {
-  margin-top: max(40px, min(2vw, 45px));
+  margin-top: 45px;
 }
 
 .new-card.card {
@@ -101,8 +100,8 @@
 }
 
 .new-next {
-  right: 20px;
-  top: 50%;
+  right: 11px;
+  top: 39%;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -112,8 +111,8 @@
 }
 
 .new-prev {
-  left: 20px;
-  top: 50%;
+  left: 11px;
+  top: 39%;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -180,6 +179,54 @@
 
 /* PC fit small */
 @media only screen and (max-width: 1300px) {
+  .new {
+    padding-top: 120px;
+    padding-bottom: 48px;
+  }
+
+  .new-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .new-desc {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+
+  .new-meta__date {
+    gap: 8px;
+  }
+
+  .new-meta__comment {
+    gap: 8px;
+  }
+
+  .new-meta__comment svg,
+  .new-meta__date svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .new-meta {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .new-card .card-text {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .new-content {
+    margin-top: 36px;
+  }
+
+  .new-card .card-body {
+    padding: 12px 0;
+  }
 }
 
 /* PC HD */
@@ -207,6 +254,54 @@
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .new {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  .new-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .new-desc {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 14px;
+  }
+
+  .new-meta__date {
+    gap: 6px;
+  }
+
+  .new-meta__comment {
+    gap: 6px;
+  }
+
+  .new-meta__comment svg,
+  .new-meta__date svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .new-meta {
+    margin-bottom: 14px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .new-card .card-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .new-content {
+    margin-top: 30px;
+  }
+
+  .new-card .card-body {
+    padding: 10px 0;
+  }
 }
 
 /* Min Mobile */
@@ -217,7 +312,7 @@
 @media only screen and (max-width: 739px) {
   .new {
     padding-top: 60px;
-    padding-bottom: 15px;
+    padding-bottom: 11px;
   }
   .new-decoration {
     width: 92%;
@@ -229,6 +324,48 @@
   .new-prev {
     left: 6px;
     top: 40%;
+  }
+  .new-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .new-desc {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+  .new-meta__comment svg,
+  .new-meta__date svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .new-meta {
+    margin-bottom: 7px;
+    font-size: 10px;
+    line-height: 12px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .new-card .card-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .new-content {
+    margin-top: 30px;
+  }
+
+  .new-card .card-body {
+    padding: 6px 0;
+  }
+  .new-meta__comment {
+    gap: 5px;
+  }
+  .new-meta__date {
+    gap: 5px;
   }
 }
 
