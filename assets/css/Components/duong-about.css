@@ -119,6 +119,7 @@ section.about {
   font-size: 18px;
   line-height: 28px;
   color: var(--slate-gray-color);
+  padding: 0 13px;
 }
 
 .about-pagination {
@@ -291,6 +292,9 @@ section.about {
   .about-detail .card-text {
     font-size: 14px;
     line-height: 22px;
+  }
+  .about-advantage {
+    margin-left: 40px;
   }
 }
 

@@ -160,7 +160,7 @@
   .project-desc {
     font-size: 14px;
     line-height: 24px;
-    max-width: 600px;
+    max-width: 670px;
     margin-top: 20px;
     margin-bottom: 40px;
   }
@@ -195,6 +195,9 @@
   .project-desc {
     margin-top: 20px;
     margin-bottom: 8px;
+    max-width: 505px;
+    font-size: 14px;
+    line-height: 20px;
   }
   .project-btn {
     font-size: 18px;
@@ -207,10 +210,6 @@
     font-size: 22px;
     line-height: 26.4px;
   }
-  .project-desc {
-    font-size: 14px;
-    line-height: 20px;
-  }
   .about-detail .card-title {
     margin-bottom: 10px;
   }
@@ -218,4 +217,7 @@
 
 /* Phone Small */
 @media only screen and (max-width: 395px) {
+  .project-desc {
+    max-width: 339px;
+  }
 }

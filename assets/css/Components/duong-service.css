@@ -61,8 +61,13 @@
 
 .services-decoration {
   position: absolute;
-  top: 60px;
+  top: 56px;
   left: 0px;
+  width: 62%;
+}
+
+.services-decoration img {
+  width: 100%;
 }
 
 .services-swiper .swiper-slide {
@@ -76,41 +81,68 @@
   font-weight: bold;
 }
 
-.services-card:hover.services-card circle {
-  fill: #f0b529;
-  fill-opacity: initial;
+.services-card .services-card__img::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  left: 0;
 }
+
 .services-design:hover img {
-  background-image: url(../../images/services/services-design.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  opacity: 0;
+}
+.services-design .services-card__img::before {
+  content: url("../../images/services/services-design.svg");
+  top: 0;
+}
+.services-design:hover.services-design .services-card__img::before {
+  opacity: 1;
 }
 
 .services-construction:hover img {
-  background-image: url(../../images/services/services-construction.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  opacity: 0;
+}
+.services-construction .services-card__img::before {
+  content: url("../../images/services/services-construction.svg");
+  top: 0;
+}
+.services-construction:hover.services-construction .services-card__img::before {
+  opacity: 1;
 }
 
 .services-equipment:hover img {
-  background-image: url(../../images/services/services-equipment.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  opacity: 0;
 }
+.services-equipment .services-card__img::before {
+  content: url("../../images/services/services-equipment.svg");
+  top: 0;
+}
+.services-equipment:hover .services-card__img::before {
+  opacity: 1;
+}
+
 .services-renovation:hover img {
-  background-image: url(../../images/services/services-renovation.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  opacity: 0;
 }
+.services-renovation .services-card__img::before {
+  content: url("../../images/services/services-renovation.svg");
+  top: 0;
+}
+.services-renovation:hover .services-card__img::before {
+  opacity: 1;
+}
+
 .services-care:hover img {
-  background-image: url(../../images/services/services-care.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  opacity: 0;
+}
+.services-care .services-card__img::before {
+  content: url("../../images/services/services-care.svg");
+  top: 0;
+  left: -11px;
+}
+.services-care:hover .services-card__img::before {
+  opacity: 1;
 }
 
 .services-card:hover {

@@ -24,7 +24,7 @@
 .solution-desc {
   font-size: 18px;
   line-height: 30px;
-  margin-bottom: 55px;
+  margin-bottom: 68px;
   margin-top: 60px;
   color: var(--deep-blue-color);
   max-width: 750px;
@@ -54,7 +54,7 @@
 
 .solution-card .card-text {
   color: var(--slate-gray-color);
-  padding: 0px 19px;
+  padding: 0px 15px;
   font-size: 18px;
   line-height: 30px;
 }
@@ -146,14 +146,9 @@
 
 .solution__decoration-top {
   position: absolute;
-  top: 5%;
+  top: 6%;
   left: 0;
-  width: 50%;
-}
-.solution__decoration-bottom {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  width: 53%;
 }
 
 .solution__decoration-top img {
@@ -330,7 +325,7 @@
   }
 
   .solution-card .card-title__price {
-    font-size: 24px;
+    font-size: 21px;
     line-height: 30px;
   }
 

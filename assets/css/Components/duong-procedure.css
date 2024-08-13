@@ -74,21 +74,77 @@
 .procedure-step {
   display: flex;
 }
+
+.procedure-step .procedure-img::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  left: 0;
+}
+
 .procedure-mess .procedure-img {
   padding-top: 48%;
-  width: 39%;
+  width: 40%;
 }
+
+.procedure-mess:hover img {
+  opacity: 0;
+}
+.procedure-mess .procedure-img::before {
+  content: url("../../images/procedure/procedure-messegae.svg");
+  top: 10%;
+}
+.procedure-mess:hover.procedure-mess .procedure-img::before {
+  opacity: 1;
+}
+
 .procedure-people .procedure-img {
   padding-top: 48%;
-  width: 55%;
+  width: 59.1%;
 }
+
+.procedure-people:hover img {
+  opacity: 0;
+}
+.procedure-people .procedure-img::before {
+  content: url("../../images/procedure/procedure-people.svg");
+  top: 10%;
+}
+.procedure-people:hover.procedure-people .procedure-img::before {
+  opacity: 1;
+}
+
 .procedure-setting .procedure-img {
   padding-top: 48%;
-  width: 30%;
+  width: 33%;
 }
+
+.procedure-setting:hover img {
+  opacity: 0;
+}
+.procedure-setting .procedure-img::before {
+  content: url("../../images/procedure/procedure-setting.svg");
+  top: 10%;
+}
+.procedure-setting:hover.procedure-setting .procedure-img::before {
+  opacity: 1;
+}
+
 .procedure-shake .procedure-img {
   padding-top: 48%;
-  width: 51%;
+  width: 59%;
+}
+
+.procedure-shake:hover img {
+  opacity: 0;
+}
+.procedure-shake .procedure-img::before {
+  content: url("../../images/procedure/procedure-shake.svg");
+  top: 0%;
+}
+.procedure-shake:hover.procedure-shake .procedure-img::before {
+  opacity: 1;
 }
 
 .procedure-mess .card-text {
@@ -176,13 +232,17 @@
 
 .procedure-decoration {
   position: absolute;
-  top: 0px;
+  top: 11px;
   right: 0px;
   width: 69%;
 }
 
 .procedure-decoration img {
   width: 100%;
+}
+
+.procedure-mess:hover img {
+  background-image: url(../../images/procedure/procedure-messegae.svg);
 }
 
 /* PC Alway  */
@@ -275,13 +335,13 @@
 
 /* Mobile & tablet */
 @media only screen and (max-width: 1023px) {
+  .procedure-arrow {
+    display: none;
+  }
 }
 
 /* Tablet */
 @media only screen and (min-width: 740px) and (max-width: 1023px) {
-  .procedure-arrow {
-    margin-top: 25% !important;
-  }
   .procedure-card {
     border: none;
     border-radius: initial;
@@ -324,6 +384,12 @@
     max-width: 180px;
     font-size: 14px;
     line-height: 23.3px;
+  }
+  .procedure-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
   }
 }
 
